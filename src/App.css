@@ -1,38 +1,413 @@
-.App {
+body {
+  background-color:rgb(231, 229, 209);
   text-align: center;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#navBar {
+  /* background-color:rgb(16, 152, 80); */
+  background-color: rgb(109, 88, 103);
+  width: 100px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  padding-top: 215px;
+  border-right: white solid 5px;
+  box-shadow: 10px 0px 20px white
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.nav {
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  
+}
+.icon {
+  font-size: 2vw;
+  color: white
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#profPic {
+  
+  border-radius:0px 0px 10px 0px;
+  position:absolute;
+  top:0;
+  left:0;
+  width: 140px;
+  z-index: 1;
+  border-right: 4px white solid;
+  border-bottom: 4px white solid;
+
 }
 
-.App-link {
-  color: #61dafb;
+
+
+
+/* Landing page styles */
+#landing {
+  text-align: left;
+  color: rgb(109, 88, 103);
+  
+}
+#name {
+  margin-top: 65px;
+  margin-left: 17vw;
+  font-size: 2.5vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#role {
+  margin-left:25vw;
+  margin-top:110px;
+  font-size:7vw;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color:white;
+  width: 50%;
+  padding: 50px;
+  border-radius: 100px;
 }
+
+#contactIcons {
+  margin-left: 35%;
+  color:rgb(109, 88, 103)
+  
+}
+.contact {
+  font-size: 2.5vw;
+  padding-left: 7vw;
+}
+
+a {
+  color:rgb(109, 88, 103)
+}
+
+
+
+
+/* About me styles */
+
+.skills {
+  width:10%;
+  float: left;
+  background: white;
+  border-radius: 20px;
+  margin-top: 30px;
+  margin-left: 7vw;
+  padding: 5px;
+  color: rgb(109, 88, 103);
+}
+
+#aboutMeInfo {
+  margin-top: 200px;
+  width: 90%;
+  margin-left: 130px;
+  
+}
+
+.heading {
+  margin-top: 80px;
+
+  
+}
+.text {
+  margin-top:110px;
+  width:95%;
+  margin-left: 2vw;
+  
+}
+.textTravel {
+  margin-top:50px;
+  width:95%;
+  margin-left: 2vw;
+  
+}
+.travelPics {
+  margin-top: 80px;
+  margin-left: 50px;
+  margin-bottom: 550px;
+  width: 90%;
+  font-size: 10px
+}
+
+.travelImg {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  object-position: 75% 25%;
+  
+}
+
+
+.imgRotateRight {
+  padding: 30px 10px 10px 10px;
+  /* border: 1px black solid; */
+  box-shadow: 10px 10px 5px #aaaaaa;
+  float: left;
+  transform: rotate(7deg);
+  background-color: white;
+  margin:10px;
+}
+.imgRotateRight:hover {
+  transform: scale(1.5);
+  /* position: fixed;
+  z-index: 1 */
+
+}
+.imgRotateLeft:hover {
+  transform: scale(1.5);
+  /* position: fixed;
+  z-index: 1 */
+
+}
+
+.imgRotateLeft {
+  padding: 30px 10px 10px 10px;
+  /* border: 1px black solid; */
+  box-shadow: 10px 10px 5px #aaaaaa;
+  float:left;
+  transform: rotate(-8deg);
+  background-color: white;
+  margin:10px;
+}
+
+.rayaPic {
+  float:right;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  object-position: 75% 25%;
+  margin-right: 10vw;
+  margin-left: 10vw;
+  padding: 30px 10px 30px 10px;
+  box-shadow: 10px 10px 5px #aaaaaa;
+  background-color: white;
+}
+.textHobbies {
+  margin-left: 5vw;
+  margin-top: 80px;
+}
+
+
+
+
+
+/* Experience page styles */
+
+.pageHeading {
+  color:white;
+  font-size: 2vw;
+  height: 6vh;
+  margin-left: 144px;
+  /* background-color: rgb(16, 152, 80); */
+  background-color: rgb(109, 88, 103);
+  padding-top:30px;
+  padding-bottom: 30px;
+  z-index:1;
+  position:fixed;
+  top:0;
+  width: 93%;
+  text-align: left;
+  padding-left: 100px;
+  
+  
+  border-bottom: white solid 5px;
+  box-shadow: 10px 10px 10px white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#expGrid {
+  display: grid;
+  text-align:left;
+  width:80%;
+  position: relative;
+  margin-left: 13vw;;
+  margin-top:10vw;
+  
+  
+}
+#expGrid::after {
+  content:'';
+  grid-column: 2;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  width: 10px;
+  background-color: black;
+  
+  
+}
+
+
+.expLeft {
+  grid-column: 1;
+  padding:20px;
+  background-color: white;
+  border-radius: 10px;
+  margin-right: 30px;
+  margin-left: 35px;
+  margin-top: 80px;
+  margin-bottom:80px;
+  text-align:center;
+  width: 30vw;
+  height:10vw;
+  border:white solid 2px;
+}
+
+.expLeft:hover {
+  background-color: rgb(210, 207, 207);
+  border:white solid 2px;
+  box-shadow: 0px 0px 10px 10px white;
+}
+
+
+.expRight {
+  grid-column: 3;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  margin-right: 30px;
+  margin-left: 35px;
+  margin-top:80px;
+  margin-bottom: 80px;
+  text-align:center;
+  width: 30vw;
+  height: 10vw;
+  border:white solid 2px;
+}
+.expRight:hover {
+  background-color: rgb(210, 207, 207);
+  border:white solid 2px;
+  box-shadow: 0px 0px 10px 10px white;
+}
+
+.infoLeft {
+  font-size: 12px;
+  grid-column: 1;
+  background-color: rgb(210, 207, 207);
+  width:30vw;
+  height: 20vw;
+  margin-right: 30px;
+  margin-left: 30px;
+  margin-top: 10px;
+  padding: 12px;
+  border-radius:30px;
+}
+
+.infoLeft::after {
+  grid-column: 1;
+  content:"";
+    position:absolute;
+    height:0;
+    width:0;
+    left:33.4vw;
+    top: 10vw;
+    border:20px solid transparent;
+    border-left: 20px solid rgb(210, 207, 207);
+}
+
+.infoRight {
+  font-size: 12px;
+  grid-column: 3;
+  background-color: rgb(210, 207, 207);
+  width:30vw;
+  height: 20vw;
+  margin-right: 30px;
+  margin-left: 50px;
+  margin-top: 20px;
+  margin-bottom:-20px;
+  padding:12px;
+  border-radius:30px;
+
+  
+}
+.infoRight:before {
+  grid-column: 3;
+  content:"";
+    position:absolute;
+    height:0;
+    width:0;
+    left:10px;
+    top: 10vw;
+    border:20px solid transparent;
+    border-right: 20px solid rgb(210, 207, 207);
+}
+
+#exp1 {
+  grid-row: 1;
+}
+#info1 {
+  grid-row: 1;
+  font-size: 12px;
+}
+#info1:before {
+  grid-row: 1;
+}
+
+#exp2 {
+  grid-row:2;
+}
+#info2 {
+  grid-row: 2;
+  font-size: 12px;
+}
+#info2:after {
+  grid-row: 2;
+}
+
+#exp3 {
+  grid-row:3;
+}
+#info3 {
+  grid-row: 3;
+  font-size: 12px;
+}
+#info3:before {
+  grid-row: 3;
+}
+
+#exp4 {
+  grid-row:4;
+}
+#info4 {
+  grid-row: 4;
+  font-size: 12px;
+}
+#info4:after {
+  grid-row: 4;
+}
+
+#exp5 {
+  grid-row:5;
+}
+#info5 {
+  grid-row: 5;
+  font-size: 12px;
+}
+#info5:before {
+  grid-row: 5;
+}
+
+#exp6 {
+  grid-row:6;
+}
+#info6 {
+  grid-row: 6;
+  font-size: 12px;
+}
+#info6:after {
+  grid-row: 6;
+}
+
+
+
+
+
+.info {
+  font-size: 12px;
+}
+
+.hidden {
+  display: none
+}
+
+
