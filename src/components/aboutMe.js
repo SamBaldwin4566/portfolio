@@ -3,7 +3,7 @@ import travel2 from '../images/travel2.jpeg'
 import travel3 from '../images/travel3.jpeg'
 import travel5 from '../images/travel5.jpeg'
 import raya1 from '../images/raya1.jpeg'
-import raya2 from '../images/raya2.jpeg'
+
 
 function AboutMe() {
 
