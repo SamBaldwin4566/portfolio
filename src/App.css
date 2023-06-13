@@ -416,3 +416,52 @@ a {
 }
 
 
+
+
+
+/* Styles for projects*/ 
+
+#projectsGrid {
+  display:grid;
+  width: 80%;
+  
+  margin-top: 150px;
+}
+
+.projects {
+  background-color: white;
+  color: rgb(109, 88, 103);
+  width: 200px;
+  height: 50px;
+  padding: 20px;
+  text-align: center;
+  margin-left:auto;
+  margin-right:auto;
+  border-radius:50px;
+  grid-row: 1
+}
+.projectsInfo {
+  
+  margin-left:auto;
+  margin-right:auto;
+  
+  grid-row: 2;
+  margin-top:50px;
+  font-size: 15px;
+
+}
+.projectPic {
+  width:300px;
+  border: white solid 20px;
+  border-radius: 50px;
+}
+
+#library {
+  grid-column: 1;
+}
+#games {
+  grid-column:2
+}
+#new {
+  grid-column: 3;
+}
