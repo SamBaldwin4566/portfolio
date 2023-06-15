@@ -13,18 +13,8 @@ function Projects() {
                             
                             </div>
                         </td>
-                        <td>
-                            <div class="projectsInfo" id="libraryInfo">
-                            <a href="http://sbaldwin-library.netlify.app" target="_blank" rel="noreferrer"><img class="projectPic" src={library} alt="Screenshot"></img></a>
-                            
-                            </div>
-                        </td>
-                        <td>
-                            <div class="projectsInfo" id="libraryInfo">
-                            <a href="http://sbaldwin-library.netlify.app" target="_blank" rel="noreferrer"><img class="projectPic" src={library} alt="Screenshot"></img></a>
-                            
-                            </div>
-                        </td>
+                        
+                        
                     </tr>
                 </table>    
             </div>
