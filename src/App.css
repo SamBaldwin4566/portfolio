@@ -228,8 +228,7 @@ tr {
   font-size:14px;
   margin-top: 80px;
   width: 50vw;
-  min-width:300px;
-  margin-left: 20px;
+  min-width:300px
 }
 
 
@@ -323,9 +322,8 @@ tr {
   height: 400px;
   margin-right: auto;
   margin-left: auto;
-  margin-top: -75px;
   
-  padding: 15px;
+  padding: 10px;
   border-radius:30px;
 }
 
@@ -351,10 +349,9 @@ tr {
   height: 400px;
   margin-right: auto;
   margin-left: auto;
-  margin-top: -75px;
   
-  ;
-  padding:15px;
+  
+  padding:10px;
   border-radius:30px;
 }
 
