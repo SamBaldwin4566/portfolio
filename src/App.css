@@ -3,7 +3,7 @@
 
 
 body {
-  background-color:rgb(196, 195, 195);
+  background-color:#d9d9d9;
   height:100%;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   /* background:linear-gradient(110deg, rgb(231, 229, 209) 30%,white 20%); */
@@ -92,7 +92,7 @@ body {
 .circle3 {
   height: 7vw;
   width: 7vw;
-  background-color: rgba(239, 239, 23, 0.6);
+  background-color: #ffde59d3;
   border-radius: 50%;
   position:fixed;
   top: 120px;
@@ -162,7 +162,7 @@ img {
   
 }
 span {
-  color:rgb(239, 239, 23);
+  color:#ffde59;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   margin-right: -1vw;
   

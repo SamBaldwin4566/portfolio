@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
-import img from '../images/profilePicture.jpeg'
+import img from '../images/Sam.png'
+import logo from '../images/SBlogo.jpeg'
 import {  BsFillHouseDoorFill, BsFillFilePersonFill,BsBuildingFill, BsClipboardFill } from "react-icons/bs";
 
 
