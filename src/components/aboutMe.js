@@ -15,26 +15,26 @@ function AboutMe() {
             <div className="circle3"></div>
             <h1 className="name"><span className="firstLetter"><b>A</b></span>bout <span className="firstLetter"><b>M</b></span>e</h1>
             <div id="aboutMe">
-                
-
-                    <div id="aboutMeInfo">
-                        <h1 class="heading">Background</h1>
                         <div class="skills">Javascript</div>
                         <div class="skills">React</div>
                         <div class="skills">HTML</div>
                         <div class="skills">CSS</div>
                         <div class="skills">Git</div>
+
+                    <div id="aboutMeInfo">
+                        <h1 class="heading">Background</h1>
+                        
                         <div class="text">
-                            <p>Growing up I never really knew what I wanted to do. I felt rushed into going to university, I think it's unfair at such 
-                            a young age you <i>forced</i> to make a decision that could shape the rest of your life. I was always told I have a very scientific
-                            brain so I went down that route and chose Biology, it was the subject I enjoyed most. Don't get me wrong I loved university and 
+                            <p>Growing up I never really knew what I wanted to do. I felt rushed into going to university. I didn't feel ready to make a decision 
+                            that could possibly shape the rest of my life. However, I was always told that I have a very scientific
+                            brain, so I chose Biology as it was the subject I enjoyed most. Don't get me wrong, I loved university and 
                             have no regrets about going, I just wish I had more time to really figure out what I wanted. 
                             </p>
-                            <p >My interest in coding first came about through lockdown, I spent many days watching youtube videos determined 
-                            to be the one to come up with the next big app. As "normal" life resumed I had to put this dream  on hold. 
-                            In 2022 I decided to give it another shot, after seeking advice from people I knew in the industry already and 
-                            decided to enroll in Web Development Bootcamp through Hyperion Development co-certified with Imperial College
-                            London. After passing the bootcamp with 99% I am now working on my own projects looking for the right opportunity
+                            <p >My interest in coding first came about during lockdown. I spent many days watching YouTube videos determined 
+                            to be the one to come up with the next big app. As "normal" life resumed I had to put this dream on hold. 
+                            In 2022 I decided to give it another shot. After seeking advice from people I knew in the industry, I 
+                            decided to enroll in a Web Development Bootcamp through Hyperion Development co-certified with Imperial College
+                            London. After passing the bootcamp with 99% I am now working on my own projects while looking for the right opportunity
                             to turn this into a career.</p>
                             <p></p>
                         
@@ -46,10 +46,10 @@ function AboutMe() {
                         <h1 class="heading">Travel</h1>
                         
                         <div class="textTravel">
-                            <p>It has always been one of my dreams to travel to every continent in the world. After university I was fortunate enough
-                            spend my early 20s travelling and working throughout South East Asia, Australia and Canada. I find it's one of the best 
-                            experiences you can have in life and I still try to travel as much as I can. Most recently I celebrated my 30th birthday with a 
-                            trip exploring Japan and South Korea.</p>
+                            <p>It has always been one of my dreams to travel to every continent in the world. After university, I was fortunate enough
+                            spend my early twenties travelling and working around South East Asia, Australia and Canada. I believe travel is one of the best 
+                            experiences you can have in life and I still try to do it as much as I can. Most recently, I celebrated my 30th birthday with a 
+                            trip to Japan and South Korea.</p>
                             <p></p>
                             <p></p>
                         </div>
@@ -93,12 +93,12 @@ function AboutMe() {
                                 <td>
                                     
                                     <div class="textHobbies">
-                                            <p>Between travel and work I am always trying to find new skills I can learn. I have always wanted to play an instrument and learn
+                                            <p>Outside of travel and work I enjoy finding new skills to learn. I have always wanted to play an instrument and learn
                                                 a second language. So I am currently in the beginner phase of learning both Spanish and Keyboard. I like to keep on top of my fitness
-                                                and I am a regular member of a gym. I am qualified to Level 3 in Personal Training and like to help my family and friends achieve their
+                                                and I am a regular member of a gym. I am also qualified up to Level 3 in Personal Training and like to help my family and friends achieve their
                                                 own fitness goals.</p> 
-                                            <p>Do you actually care about this or would you rather just see a picture of my dog. Raya. She is a
-                                                rescue from Bulgaria. We recently took a DNA text for her and it turns out her two most prominant breeds are German Shepherd and Chow Chow.
+                                            <p>One of my favourite ways to spend time is with my rescue dog Raya who I adopted from Bulgaria. We recently did a DNA test and found
+                                                out her two most prominant breeds are German Shepherd and Chow Chow.
                                                 She's ace. 
                                             </p>
                                     </div>

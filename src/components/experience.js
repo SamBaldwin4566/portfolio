@@ -51,7 +51,7 @@ function Experience() {
                     <div id="info1" className="infoRight">
 
                         <p>Recently I have taken up part-time freelancing work for the flight-free travel company Byway. Sustainability is a huge part 
-                        of this company and I have loved my experience so far supporting them. Working for Byway has given me a insight into working for a
+                        of this company and I have loved my experience supporting their mission. Working for Byway has given me a insight into working for a
                         tech start-up and all the challenges and rewards that come with it.</p>
                         <p>My responsibilities include:</p>
 
@@ -81,7 +81,8 @@ function Experience() {
 
                         <p>Over the past 4 years I have worked as a Science Technician at Batley Grammar School. It has been a stable job and given
                         me opportunities to develop and achieve a lot of my goals. It has taught me great organistational skills and the ability to 
-                        think on my feet under pressured situations. As much as I have appreciated this job I feel as though it is time to move on.</p>
+                        think on my feet under pressured situations. As much as I have appreciated this opportunity I feel as though it is time to move
+                        onto something I'm more passionate about.</p>
                         
                         <p>My responsibilities include:</p>
 
@@ -115,9 +116,9 @@ function Experience() {
                 {isShown3 && (      
                     <div id="info3" className="infoRight">
 
-                        <p>In 2022 I decided to take advantage of a governemnt funded Bootcamp to give myself a basic understanding of Web Development.
-                        I opted for Hyperion Development as I was able to complete the course remotely while continuing to work full time. After 3 months of long evenings and weekend,
-                        and endless lines of code I came out of it with a 99% pass graded and a certificate co-certified by Imperial College London.</p>
+                        <p>In 2022, I decided to take advantage of a governemnt funded Bootcamp to give myself a basic understanding of Web Development.
+                        I opted for Hyperion Development as I was able to complete the course remotely while continuing to work full time. After three months of long evenings and weekends
+                        and endless lines of code, I came out with a 99% pass grade and a certificate co-certified by Imperial College London.</p>
 
                         <p>The course included lectures, daily coding problems with strict deadlines and projects to complete. I learned the fundamentals of JavaScript, HTML,
                         CSS, React, node.js, Git and an overall look into frontend development with crossover into backend. I really enjoyed completing this course and it fueled 
@@ -150,7 +151,7 @@ function Experience() {
                     <div id="info4" className="infoLeft">
 
                         <p>Global Debt Recovery was the first job I got after returning to England from my year living in Canada. It was a job I took while still searching
-                        for a role more suited to my education. In the short time I was there I learned a lot about communication skills, GDPR and how to deal with sensitive
+                        for a role more suited to my education. In the short time I was there, I learned a lot about communication skills, GDPR and how to deal with sensitive
                         information in a professional manner.</p> 
                         
                         <p>My resposibilities included:</p>
@@ -210,7 +211,7 @@ function Experience() {
                 {isShown6 && (
                 <div id="info6" className="infoLeft">
 
-                    <p>In March 2017 I returned to England from a 2 year working holiday in Australia. I worked various odd jobs to keep my travels possible, but when 
+                    <p>In March 2017, I returned to England from a two year working holiday in Australia. I worked various odd jobs to fund my travels, but when 
                     back in England I wanted to gain some experience in the Science industry. The opportunity to work for Microsearch came not too long after I returned.</p>
                         
                     <p>I learned of lot about working in a Scientific enviornment with this job and it taught me the ability to work under high pressure with tight deadlines.
