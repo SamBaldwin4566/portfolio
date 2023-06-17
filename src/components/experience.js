@@ -28,8 +28,11 @@ function Experience() {
     
     return(
         <div id="experience">
-            <div className="pageHeading"><b>Experience</b></div>
-            
+            {/* <div className="pageHeading"><b>Experience</b></div> */}
+            <div className="circle1"></div>
+            <div className="circle2"></div>
+            <div className="circle3"></div>
+            <h1 className="name"><span className="firstLetter"><b>E</b></span>xperience & <span className="firstLetter"><b>E</b></span>ducation</h1>
             <div id="expGrid" className={isMobile ? "expMob" : 'expWeb'}>
 
                 <div id="exp1" className="expLeft"

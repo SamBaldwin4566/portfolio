@@ -9,7 +9,11 @@ function AboutMe() {
 
     return(
         <div>
-            <div className="pageHeading"><b>About Me</b></div>
+            {/* <div className="pageHeading"><b>About Me</b></div> */}
+            <div className="circle1"></div>
+            <div className="circle2"></div>
+            <div className="circle3"></div>
+            <h1 className="name"><span className="firstLetter"><b>A</b></span>bout <span className="firstLetter"><b>M</b></span>e</h1>
             <div id="aboutMe">
                 
 

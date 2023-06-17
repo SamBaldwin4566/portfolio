@@ -4,7 +4,11 @@ function Projects() {
 
     return(
         <div id="projects">
-            <div className="pageHeading"><b>Projects</b>
+            {/* <div className="pageHeading"><b>Projects</b></div> */}
+            <div className="circle1"></div>
+            <div className="circle2"></div>
+            <div className="circle3"></div>
+            <h1 className="name"><span className="firstLetter"><b>P</b></span>rojects</h1>
                 <table id="projectsGrid">
                     <tr>
                         <td>
@@ -17,7 +21,7 @@ function Projects() {
                         
                     </tr>
                 </table>    
-            </div>
+            
         </div>
     )
 }
