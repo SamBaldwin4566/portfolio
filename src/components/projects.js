@@ -1,6 +1,6 @@
 import library from '../images/Library.png'
 import cloneWebpage from '../images/CloneWebpage.png'
-import gamesApp from '../images/gamesApp.png'
+import gamesApp from '../images/GamesApp.png'
 
 function Projects() {
 
