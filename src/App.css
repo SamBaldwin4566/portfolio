@@ -392,7 +392,9 @@ tr {
 }
 
 
-
+.expSection {
+  height:300px;
+}
 
 .expLeft {
   grid-column: 1;
@@ -501,7 +503,7 @@ tr {
 }
 .expMob .infoLeft {
   margin-top: 100px;
-  font-size: 3px;
+  
   margin-top: -80px;
   
 }
