@@ -201,7 +201,7 @@ span {
 #contactIcons {
   margin-left: 62%;
   position:absolute;
-  top: 550px;
+  bottom: 18%;
   /* color:rgb(109, 88, 103); */
   color:white;
   
@@ -458,8 +458,9 @@ tr {
   margin-right: auto;
   margin-left: auto;
   
-  padding: 10px;
+  padding: 20px;
   border-radius:30px;
+  font-size: 11px
 }
 .infoRight {
   grid-column: 3;
@@ -469,8 +470,9 @@ tr {
   height: auto;
   margin-right: auto;
   margin-left: auto;
-  padding:10px;
+  padding:20px;
   border-radius:30px;
+  font-size: 11px
 }
 
 /* Arrow */
@@ -527,7 +529,7 @@ tr {
 }
 #info1 {
   grid-row: 1;
-  font-size: 12px;
+  
 }
 #info1:before {
   grid-row: 1;
@@ -538,7 +540,7 @@ tr {
 }
 #info2 {
   grid-row: 2;
-  font-size: 12px;
+  
 }
 #info2:after {
   grid-row: 2;
@@ -549,7 +551,7 @@ tr {
 }
 #info3 {
   grid-row: 3;
-  font-size: 12px;
+  
 }
 #info3:before {
   grid-row: 3;
@@ -560,7 +562,7 @@ tr {
 }
 #info4 {
   grid-row: 4;
-  font-size: 12px;
+  
 }
 #info4:after {
   grid-row: 4;
@@ -571,7 +573,7 @@ tr {
 }
 #info5 {
   grid-row: 5;
-  font-size: 12px;
+  
 }
 #info5:before {
   grid-row: 5;
@@ -582,7 +584,7 @@ tr {
 }
 #info6 {
   grid-row: 6;
-  font-size: 12px;
+  
 }
 #info6:after {
   grid-row: 6;
@@ -628,15 +630,30 @@ tr {
   border-radius:50px;
   grid-row: 1
 } */
-
+.projectsInfo {
+  width:19vw;
+  background-color: white;
+  margin: 30px;
+  border-radius: 50px;
+  height:auto;
+  padding:10px;
+  font-size: 11px;
+  min-width:165px;
+  
+}
 .projectPic {
   width: 18vw;
   min-width:150px;
-  border: white solid 10px;
+  /* border: white 1px solid; */
+  margin-top:5px;
+
   border-radius: 50px;
-  margin: 30px;
   
   
+}
+
+.projectPic:hover {
+  box-shadow: 0px 0px 5px 1px black;
 }
 
 
