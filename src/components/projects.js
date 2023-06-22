@@ -39,7 +39,7 @@ function Projects() {
                         </td>
                         <td>
                             <div class="projectsInfo">
-                            <a href="sbaldwin-games-app.netlify.app" target="_blank" rel="noreferrer"><img class="projectPic" src={gamesApp} alt="Screenshot"></img></a>
+                            <a href="https://sbaldwin-games-app.netlify.app" target="_blank" rel="noreferrer"><img class="projectPic" src={gamesApp} alt="Screenshot"></img></a>
                             <p><b>Games App</b></p>
                             <p>React | JavaScript | HTML | CSS</p>
                             <p>This was my final project during my Web Development bootcamp. I had to use React to create an app that showcased everything I learned during the course.
