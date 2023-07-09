@@ -1,13 +1,13 @@
 
 import { BsGithub, BsLinkedin, BsEnvelopeAtFill } from "react-icons/bs";
-
+import img from '../images/Sam.png'
 
 function Landing() {
 
     return(
         <div id="landing">
             <div className="circle1"></div>
-            <div className="circle2"></div>
+            <div className="circle2"><img src={img} id="profPic" alt="pic"></img></div>
             <div className="circle3"></div>
             {/* <div className="triangle1"></div> */}
             {/* <div className="triangle2"></div> */}

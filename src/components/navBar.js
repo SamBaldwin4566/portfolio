@@ -10,19 +10,20 @@ import {  BsFillHouseDoorFill, BsFillFilePersonFill,BsBuildingFill, BsClipboardF
 
 function NavBar() {
 
+    // let logo = document.getElementById('#logo')
+    // function transform() {
+    //     toggleClass('.logo','.logo-active');
+    // }
     
-
     return(
         <div id="navBar">
             
-            {/* <div className="circle1"></div>
-            <div className="circle2"></div>
-            <div className="circle3"></div> */}
+            <div id="logo" className="logo" onclick='transform()'></div>
             <div className="nav"><NavLink exact activeClassName = "active" to="/"><BsFillHouseDoorFill className="icon"/></NavLink></div>
             <div className="nav"><NavLink activeClassName = "active" to="/aboutme"><BsFillFilePersonFill className="icon"/></NavLink></div>
             <div className="nav"><NavLink activeClassName = "active" to="/experience"><BsBuildingFill className="icon"/></NavLink></div>
             <div className="nav"><NavLink activeClassName = "active" to="/projects"><BsClipboardFill className="icon"/></NavLink></div>
-            <img src={img} id="profPic" alt="pic"></img>
+            {/* <img src={img} id="profPic" alt="pic"></img> */}
         </div>
     )
 }
