@@ -399,6 +399,7 @@ tr {
   margin-left: 13vw;;
   margin-top:10vw;
   color: black;
+
 }
 
 /* Mobile page display */
@@ -408,6 +409,7 @@ tr {
   margin-left:auto;
   margin-right:auto;
   margin-left: 13vw;
+  color: black;
 }
 
 /* Divider between the columns  */
