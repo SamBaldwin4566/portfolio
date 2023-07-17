@@ -7,66 +7,205 @@ body {
   color:rgb(255, 255, 255);
   height:100%;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  /* background:linear-gradient(110deg, rgb(231, 229, 209) 30%,white 20%); */
   text-align: center;
-  /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif */
-  
 }
 
+
+
+
+
+/* /////////////////Navigation bar////////////// */
+
+
 #navBar {
-  /* background-color:rgb(16, 152, 80); */
+  
   background-color: black;
-  width: 6%;
-  /* width: 8vw; */
+  width: 6.5%;
   min-width:50px;
   height: 100%;
   position: fixed;
   top: 0;
   padding-top: 180px;
-  /* border-right: white solid 5px; */
-  /* box-shadow: 10px 0px 20px white */
+  
 }
 
-
 .nav {
-  padding-top: 5vh;
-  padding-bottom: 5vh;
+  position:fixed;
+  top: 33px;
+  left:3px;
+  width:6%;
   
+}
+
+/* Navigation Icons move down */
+@keyframes home-move {
+  0%{top: 33px}
+  100%{top: 30%}
+}
+@keyframes aboutMe-move {
+  0%{top: 33px}
+  100%{top: 45%}
+}
+@keyframes experience-move {
+  0%{top: 33px}
+  100%{top: 60%}
+}
+@keyframes projects-move {
+  0%{top: 33px}
+  100%{top: 75%}
+}
+.nav-home-active {
+  position:fixed;
+  top: 33px;
+  left:3px;
+  animation-fill-mode: forwards;
+  animation-name: home-move;
+  animation-duration: 1s;
+  width:6%;
+  height:6%;
+}
+.nav-aboutMe-active {
+  position:fixed;
+  top: 33px;
+  left:3px;
+  animation-fill-mode: forwards;
+  animation-name: aboutMe-move;
+  animation-duration: 1.25s;
+ 
+  width:6%;
+}
+.nav-experience-active {
+  position:fixed;
+  top: 33px;
+  left:3px;
+  animation-fill-mode: forwards;
+  animation-name: experience-move;
+  animation-duration: 1.5s;
   
+  width:6%;
+  height:6%;
+}
+.nav-projects-active {
+  position:fixed;
+  top: 30px;
+  left:3px;
+  animation-fill-mode: forwards;
+  animation-name: projects-move;
+  animation-duration: 1.75s;
+  
+  width:6%;
+  height: 6%
+}
+
+/* Navigation Icons move up */
+@keyframes home-move-up {
+  0%{top: 30%}
+  100%{top: 33px}
+}
+@keyframes aboutMe-move-up {
+  0%{top: 45%}
+  100%{top: 33px}
+}
+@keyframes experience-move-up {
+  0%{top: 60%}
+  100%{top: 33px}
+}
+@keyframes projects-move-up {
+  0%{top: 75%}
+  100%{top: 33px}
+}
+.nav-home {
+  position:fixed;
+  top: 30%;
+  left:3px;
+  animation-fill-mode: forwards;
+  animation-name: home-move-up;
+  animation-duration: 1s;
+  width:6%;
+  height:6%;
+}
+.nav-aboutMe {
+  position:fixed;
+  top: 45%;
+  left:3px;
+  animation-fill-mode: forwards;
+  animation-name: aboutMe-move-up;
+  animation-duration: 1.25s;
+  width:6%;
+}
+.nav-experience {
+  position:fixed;
+  top: 60%;
+  left:3px;
+  animation-fill-mode: forwards;
+  animation-name: experience-move-up;
+  animation-duration: 1.5s;
+  width:6%;
+  height:6%;
+}
+.nav-projects {
+  position:fixed;
+  top: 75%;
+  left:3px;
+  animation-fill-mode: forwards;
+  animation-name: projects-move-up;
+  animation-duration: 1.75s;
+  width:6%;
+  height: 6%
 }
 
 .logo {
-  height: 80px;
-  width: 80px;
-  background-color: rgb(255, 255, 255);
-  border-radius: 50%;
-  position:relative;
-  top: -170px;
-  left:3px;
+  height: max(6vw, 80px);
+  width: max(6vw, 80px);
+  background-color: black;
+  font-size: 500%;
+  font-family: Comfortaa, sans-serif;
+  border: white 3px solid;
+  border-radius: 100px;
+  position:fixed;
+  top: 0px;
+  left:1px;
   z-index:100;
+  
+
+}
+.logo:hover {
+  color:pink;
+  border-color:pink;
+  
+  transition-duration: 1s;
+  
 }
 .logo-active {
-  height: 80px;
-  width: 80px;
-  background-color: rgb(198, 22, 22);
-  border-radius: 50%;
-  position:relative;
-  top: -170px;
-  left:3px;
+  height: max(6vw, 80px);
+  width: max(6vw, 80px);
+  background-color:#f4ce37;;
+  font-size: 500%;
+  font-family: Comfortaa, sans-serif;
+  border:black 3px solid;
+  color:black;
+  border-radius: 100px;
+  position:fixed;
+  top: 0px;
+  left:1px;
   z-index:100;
+  transform: rotate(-180deg);
+  transition-duration: 1s;
+}
+.logo-active:hover {
+  color: black;
+  border-color:#f4ce37;;
+  
 }
 
-@keyframes move {
-  0%{top:0px;}
-  100%{top:100px;}
-}
+
 
 .icon {
-  font-size: 30px;
+  font-size: max(2vw,15px);
   color: black;
-  background-color: rgb(255, 255, 255);
-  padding-top: 20px;
-  padding-bottom:20px;
+  background-color: white;
+  padding-top: 2.2vh;
+  padding-bottom:2.2vh;
   border-radius: 100px;
   margin-top: -20px;
   margin-bottom: -20px;
@@ -74,39 +213,51 @@ body {
   min-width:37px;
   
 }
+.icon:hover {
+  font-size: max(2.5vw,15px);
+  width: 85%;
+  background-color: rgb(241, 192, 200);
+  transition-duration: 0.5s;
+}
+
+
 .active .icon {
   color: black;
   background-color: #f4ce37;
-  padding-top: 20px;
-  padding-bottom:20px;
+  padding-top: 2.2vh;
+  padding-bottom:2.2vh;
   border-radius: 100px;
   margin-top: -20px;
   margin-bottom: -20px;
   width: 80%;
   min-width:37px;
+  
+}
+.active .icon:hover {
+  font-size: max(2.5vw,15px);
+  width: 85%;
+  transition-duration: 0.5s;
 }
 
-/* #profPic {
-  
-  border-radius:0px 0px 10px 0px;
-  position:fixed;
-  transform: rotate(0deg);
-  top:0;
-  left:0;
-  width: 120px;
- 
-  z-index:100;
-  border-right: 4px white solid;
-  border-bottom: 4px white solid;
-} */
+
+
+
+
+
+
+
+
+
+/* ////////////// BACKGROUND ////////////////// */
+
+
+
 .circle1 {
   height: max(65vw, 420px);
   width: max(65vw, 420px);
-  
   background-color: rgba(48, 48, 50, 0.6);
   border-radius: 50%;
   position:fixed;
- 
   top: 350px;
   left: 55vw;
   z-index:-100;
@@ -117,6 +268,7 @@ body {
   height: 15vw;
   width: 15vw;
   background-color: rgba(255, 255, 255, 0.745);
+  
   border-radius: 50%;
   position:fixed;
   top: 120px;
@@ -131,7 +283,7 @@ body {
   position:fixed;
   top: 120px;
   left:78vw;
-  z-index:-40;
+  z-index:100;
 }
 .circle3 {
   height: 7vw;
@@ -148,12 +300,15 @@ img {
   filter:grayscale(0%)
 }
 
+
+
+
+
 .pageHeading {
   color:white;
   font-size: 20px;
   height: 3%;
   margin-left: 123px;
-  /* background-color: rgb(16, 152, 80); */
   background-color: black;
   padding-top:30px;
   padding-bottom: 30px;
@@ -163,8 +318,6 @@ img {
   width: 93%;
   text-align: left;
   padding-left: 7vw;
-  
-  
   border-bottom: white solid 5px;
   box-shadow: 10px 10px 10px white;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -172,29 +325,32 @@ img {
 
 
 
-/* Landing page styles */
+
+
+
+
+
+
+
+/* /////////////////Landing page styles/////////////// */
+
 #landing {
   text-align: left;
-  /* color: black; */
-  
 }
+
 .name {
   margin-top: 130px;
   margin-left: 17vw;
   font-size: max(3vw, 20px);
-  font-family:"Exo", sans-serif;
+  font-family:"Caveat", sans-serif;
   text-align: left;
-  
-  
-  
 }
 
 #role {
   margin-left:22vw;
   margin-top:70px;
   font-size: max(7vw, 43px);
-  font-family:"Exo", sans-serif;
-  /* background-color:rgb(162, 163, 159); */
+  font-family:"Comfortaa", sans-serif;
   width: 55vw;
   min-width: 150px;
   padding: 3vw;
@@ -203,24 +359,22 @@ img {
   position:absolute;
   top:29%;
   
-  
-  
 }
+
 span {
   color:#f4ce37;
   font-family:'Comfortaa', sans-serif;
   margin-right: -0.5vw;
-  
-  
-  
 }
+
 .name span {
   font-size: max(4.5vw, 35px);
-  margin-right: -0.8vw;
+  margin-right: -1vw;
 }
+
 #role span {
   font-size: max(9.1vw, 60px);
-  margin-right: -2vw;
+  margin-right: -1.8vw;
 }
 
 
@@ -228,15 +382,16 @@ span {
   margin-left: 62%;
   position:absolute;
   bottom: 18%;
-  /* color:rgb(109, 88, 103); */
-  color:white;
-  
-  
+  color:white; 
 }
+
 .contact {
   font-size: 4vw;
   padding-left: 6vw;
   color:white
+}
+.contact:hover {
+  color:pink
 }
 
 a {
@@ -246,7 +401,12 @@ a {
 
 
 
-/* About me styles */
+
+
+
+
+
+/* //////////////////About me styles ////////////////*/
 
 #aboutMe {
   width: 82%;
@@ -257,7 +417,7 @@ a {
 }
 #aboutMe .heading {
   font-size: max(2.7vw, 20px);
-  font-family: "Exo", sans-serif;
+  font-family: "Comfortaa", sans-serif;
  
   /* text-decoration: underline; */
 }
@@ -344,10 +504,12 @@ tr {
 }
 .imgRotateRight:hover {
   transform: scale(1.5);
+  transition-duration: 0.5s;
   
 }
 .imgRotateLeft:hover {
   transform: scale(1.5);
+  transition-duration: 0.5s;
 }
 
 .imgRotateLeft {

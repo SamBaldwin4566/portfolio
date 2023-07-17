@@ -11,8 +11,10 @@ function Landing() {
             <div className="circle3"></div>
             {/* <div className="triangle1"></div> */}
             {/* <div className="triangle2"></div> */}
-            <h1 class="name">Hi, I'm <br/><span className="firstLetter"><b>S</b></span>am <span className="firstLetter"><b>B</b></span>aldwin</h1>
+            {/* <h1 class="name">Hi, I'm <br/><span className="firstLetter"><b>S</b></span>am <span className="firstLetter"><b>B</b></span>aldwin</h1> */}
+            <h1 class="name">Hi, I'm <br/>Sam Baldwin</h1>
             <h2 id="role"><span className="firstLetter"><b>W</b></span>eb <span className="firstLetter"><b>D</b></span>eveloper</h2>
+            {/* <h2 id="role">Web Developer</h2> */}
             
             <div id="contactIcons">
                 <a href="https://github.com/SamBaldwin4566" target="_blank" rel="noreferrer"><BsGithub className="contact"/></a>

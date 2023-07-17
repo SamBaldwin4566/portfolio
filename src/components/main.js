@@ -12,9 +12,9 @@ function Main() {
             <div className="circle1"></div>
             <div className="circle2"></div>
             <div className="circle3"></div>
-            <AboutMe />
-            <Experience />
-            <Projects />
+            <AboutMe id="aboutMeSection"/>
+            <Experience id="experienceSection"/>
+            <Projects id="projectsSection"/>
         </div>
     )
 }
