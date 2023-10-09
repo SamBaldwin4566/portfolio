@@ -31,18 +31,15 @@ function AboutMe() {
                         <h1 class="heading">Background</h1>
                         
                         <div class="text">
-                            <p>Growing up I never really knew what I wanted to do. I felt rushed into going to university. I didn't feel ready to make a decision 
-                            that could possibly shape the rest of my life. However, I was always told that I have a very scientific
-                            brain, so I chose Biology as it was the subject I enjoyed most. Don't get me wrong, I loved university and 
-                            have no regrets about going, I just wish I had more time to really figure out what I wanted. 
-                            </p>
+                            
                             <p >My interest in coding first came about during lockdown. I spent many days watching YouTube videos determined 
                             to be the one to come up with the next big app. As "normal" life resumed I had to put this dream on hold. 
                             In 2022 I decided to give it another shot. After seeking advice from people I knew in the industry, I 
                             decided to enroll in a Web Development Bootcamp through Hyperion Development co-certified with Imperial College
                             London. After passing the bootcamp with 99% I am now working on my own projects while looking for the right opportunity
                             to turn this into a career.</p>
-                            <p></p>
+                            <p>I am currently volunteering as a Front-End Developer for Farmspeak Technology. I have gained invaluable experience from
+                            this opportunity and it has just reinforced my drive to have a career in this industy.</p>
                         
                         </div>
                         <br/>
