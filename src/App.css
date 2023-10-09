@@ -1,5 +1,4 @@
-/* color: rgb(109, 88, 103); purple*/
-/* rgb(231, 229, 209) off white*/
+
 
 
 body {
@@ -415,7 +414,6 @@ a {
 
 #aboutMe {
   width: 82%;
-  /* border: solid red 2px; */
   margin-left: 13%;
   margin-top:100px;
   z-index:1;
@@ -423,24 +421,30 @@ a {
 #aboutMe .heading {
   font-size: max(2.7vw, 20px);
   font-family: "Comfortaa", sans-serif;
- 
-  /* text-decoration: underline; */
 }
 #aboutMe p {
   text-align:left;
 }
 
+#skillList {
+  display: flex
+}
+@media screen and (max-width: 900px){
+  #skillList {
+    display:none
+  }
+}
+
 .skills {
   width:10%;
-  float: left;
+  
   background: white;
   border-radius: 20vw;
-  /* margin-top: -50px; */
   margin-left: 7.5%;
   margin-bottom:50px;
   padding: 0.5vw;
   color: black;
-  font-size: 1.5vw;
+  font-size: 15px;
 }
 
 #aboutMeInfo {
@@ -458,7 +462,7 @@ a {
 .text {
   margin-top:50px;
   font-size:14px;
-  min-width: 300px;
+  /* min-width: 300px; */
   
   /* margin-left: 2vw; */
   
@@ -466,14 +470,14 @@ a {
 .textTravel {
   margin-top:50px;
   font-size: 14px;
-  min-width: 300px;
+  /* min-width: 300px; */
   
   
   
 }
 .travelPics {
-  margin-top: 80px;
-  padding-left:40px;
+  padding-top: 60px;
+  margin:auto;
   margin-bottom: 80px;
   
   font-size: max(1vw, 9 px); 
@@ -486,9 +490,9 @@ tr {
 
 .travelImg {
   width: min(20vw,230px);
-  min-width: 150px;
+  min-width: 110px;
   height: min(20vw,230px);
-  min-height:150px;
+  min-height:110px;
   object-fit: cover;
   object-position: 75% 25%;
   
@@ -500,9 +504,8 @@ tr {
 .imgRotateRight {
   padding: 2vw 1vw 1vw 1vw;
   width: min(20vw,230px);
-  min-width: 150px;
+  min-width: 110px;
   box-shadow: 10px 10px 5px #aaaaaa;
-  /* float: left; */
   transform: rotate(7deg);
   background-color: white;
   margin:10px;
@@ -520,9 +523,8 @@ tr {
 .imgRotateLeft {
   padding: 2vw 1vw 1vw 1vw;
   width: min(20vw,230px);
-  min-width: 150px;
+  min-width: 110px;
   box-shadow: 10px 10px 5px #aaaaaa;
-  /* float:left; */
   transform: rotate(-8deg);
   background-color: white;
   margin:10px;
@@ -531,13 +533,13 @@ tr {
 
 
 .rayaPic {
-  float:right;
-  width: 250px;
-  height: 250px;
+  
+  width: 30%;
+  height: 400px;
   object-fit: cover;
   object-position: 75% 25%;
-  margin-left: 5vw;
-  margin-top: 50px;
+  margin-top:30px;
+  margin: auto;
   padding: 30px 10px 30px 10px;
   box-shadow: 10px 10px 5px #aaaaaa;
   background-color: white;
@@ -546,10 +548,28 @@ tr {
   
   font-size:14px;
   margin-top: 80px;
-  width: 50vw;
-  min-width:300px
+  margin-left:15px;
+  width:95%;
 }
 
+@media screen and (max-width: 900px){
+  .travelPics {
+    padding-top:10px;
+    padding-left:10px;
+    font-size: 7px;
+  }
+  
+  .imgRotateLeft {
+    transform: rotate(0deg);
+  }
+  .imgRotateRight {
+    transform: rotate(0deg);
+  }
+  .rayaPic {
+    height: 30vh;
+    width: 50%;
+  }
+}
 
 /* //////////////////////////////////////////////// */
 
@@ -564,7 +584,6 @@ tr {
 
 #expGrid {
   width: 40%;
-  /* border: white solid 2px; */
   margin: auto;
   overflow: scroll;
   height:400px;
@@ -593,24 +612,8 @@ tr {
 /* Mobile page display */
 .expMob {
   text-align:left;
-  /* width: 300px; */
-  
   color: black;
 }
-
-/* Divider between the columns  */
-/* .expWeb::after {
-  content:'';
-  grid-column: 2;
-  
-  position: absolute;
-  top:0;
-  bottom: 0;
-  width: 5px;
-  height:800px;
-  background-color: white;
-  mar
-} */
 
 
 
@@ -684,26 +687,18 @@ tr {
   }
 }
 
-/* .expMob .expLeft:hover {
-  display:none
-}
 
-.expMob .expRight:hover {
-  display:none
-} */
 
 
 
 .infoLeft {
   grid-column: 1;
   background-color: white;
-  /* color:white; */
   width:25vw;
   min-width:250px;
   height: auto;
   margin-right: auto;
   margin-left: auto;
-  
   padding: 20px;
   border-radius:30px;
   font-size: 11px
@@ -721,19 +716,6 @@ tr {
   font-size: 11px
 }
 
-/* Arrow */
-/* .infoLeft::after {
-  grid-column: 1;
-  content:"";
-    position:absolute;
-    height:0;
-    width:0;
-    left:560px;
-    top: 10vw;
-    border:20px solid transparent;
-    border-left: 20px solid rgb(210, 207, 207);
-} */
-
 
 
 .expMob .expLeft {
@@ -745,30 +727,7 @@ tr {
   margin-top:10px;
   
 }
-/* .expMob .infoLeft {
-  margin-top: 100px;
-  
-  margin-top: -80px;
-  
-}
-.expMob .infoRight {
-  margin-top: 100px;
-  margin-top: -80px;
-  
-} */
 
-/* Arrow */
-/* .infoRight:before {
-  grid-column: 3;
-  content:"";
-    position:absolute;
-    height:0;
-    width:0;
-    left:10px;
-    top: 10vw;
-    border:20px solid transparent;
-    border-right: 20px solid rgb(210, 207, 207);
-} */
 
 #exp1 {
   grid-row: 1;
@@ -900,51 +859,5 @@ tr {
   box-shadow: 0px 0px 10px white
 }
 
-/* #projectsGrid {
-  
-  width: 90%;
-  margin-left: 10vw;
-  margin-top: 50px;
-  color: black;
-  
-}
-
-.projects {
-  background-color: white;
-  color: rgb(109, 88, 103);
-  min-width: 100px;
-  height: 50px;
-  padding: 20px;
-  text-align: center;
-  margin-left:auto;
-  margin-right:auto;
-  border-radius:50px;
-  grid-row: 1
-}
-.projectsInfo {
-  width:19vw;
-  background-color: white;
-  margin: 30px;
-  border-radius: 50px;
-  height:auto;
-  padding:10px;
-  font-size: 11px;
-  min-width:165px;
-  
-}
-.projectPic {
-  width: 18vw;
-  min-width:150px;
-  
-  margin-top:5px;
-
-  border-radius: 50px;
-  
-  
-}
-
-.projectPic:hover {
-  box-shadow: 0px 0px 5px 1px black;
-} */
 
 

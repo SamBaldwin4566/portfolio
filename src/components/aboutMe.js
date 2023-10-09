@@ -21,11 +21,14 @@ function AboutMe() {
             <h1 className="name"><span className="firstLetter"><b>A</b></span>bout <span className="firstLetter"><b>M</b></span>e</h1>
             <div id="aboutMe">
                         
-                        <div class="skills">Javascript</div>
-                        <div class="skills">React</div>
-                        <div class="skills">HTML</div>
-                        <div class="skills">CSS</div>
-                        <div class="skills">Git</div>
+                        <div id="skillList">
+                            <div class="skills">Javascript</div>
+                            <div class="skills">React</div>
+                            <div class="skills">HTML</div>
+                            <div class="skills">CSS</div>
+                            <div class="skills">Git</div> 
+                        </div>
+                        
 
                     <div id="aboutMeInfo">
                         <h1 class="heading">Background</h1>
@@ -91,26 +94,22 @@ function AboutMe() {
                         </div> 
                         <hr></hr>
                         <h1 id="hobbies" class="heading">Hobbies & Interests</h1>
-                        <table id ="tableHobbies">
-                            <tr>
-                                <td>
-                                    
-                                    <div class="textHobbies">
-                                            <p>Outside of travel and work I enjoy finding new skills to learn. I have always wanted to play an instrument and learn
+                        <div>
+                            <div class="textHobbies">
+                                <p>Outside of travel and work I enjoy finding new skills to learn. I have always wanted to play an instrument and learn
                                                 a second language. So I am currently in the beginner phase of learning both Spanish and Keyboard. I like to keep on top of my fitness
                                                 and I am a regular member of a gym. I am also qualified up to Level 3 in Personal Training and like to help my family and friends achieve their
                                                 own fitness goals.</p> 
-                                            <p>One of my favourite ways to spend time is with my rescue dog Raya who I adopted from Bulgaria. We recently did a DNA test and found
+                                <p>One of my favourite ways to spend time is with my rescue dog Raya who I adopted from Bulgaria. We recently did a DNA test and found
                                                 out her two most prominant breeds are German Shepherd and Chow Chow.
                                                 She's ace. 
-                                            </p>
-                                    </div>
-                                </td>    
-                                <td>
-                                    <img src={raya1} alt="Raya" class="rayaPic"></img>
-                                </td>    
-                            </tr>    
-                        </table>
+                                </p>
+                            </div>
+                            <img src={raya1} alt="Raya" class="rayaPic"></img>
+                        </div>
+                                    
+                                    
+                    
                         <br/><br/><br/><br/><br/><br/>
                         <hr/>
                     
