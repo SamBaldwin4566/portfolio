@@ -200,7 +200,7 @@ body {
 
 
 .icon {
-  display: flex;
+  /* display: flex; */
   font-size: max(2vw,15px);
   color: white;
   background-color: black;
@@ -224,6 +224,13 @@ body {
   
 }
 
+.iconText {
+  font-size: 15px;
+  /* display:none */
+  text-decoration: none;
+  font-family:"Caveat", sans-serif;
+}
+
 
 .active .icon {
   color: black;
@@ -236,14 +243,34 @@ body {
   width: 80%;
   min-width:37px;
   
+  
 }
 .active .icon:hover {
   font-size: max(2vw,15px);
+  
   width: 80%;
   transition-duration: 0.5s;
 }
 
 
+@media screen and (max-width: 900px){
+  .iconText {
+    display: none
+  }
+}
+
+@media screen and (min-width: 900px){
+  .icon:hover {
+    width: 120%;
+    height:45px
+
+  }
+  .active .icon:hover {
+    width: 120%;
+  
+  }
+  
+}
 
 
 
