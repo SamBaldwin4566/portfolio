@@ -510,6 +510,10 @@ a {
   font-size: max(1vw, 9 px); 
   color: black;
 }
+#picsTable {
+  
+  margin: auto
+}
 tr {
   display:flex;
   flex-wrap: wrap;
