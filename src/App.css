@@ -510,9 +510,17 @@ a {
   font-size: max(1vw, 9 px); 
   color: black;
 }
+
+
 #picsTable {
   
   margin: auto
+}
+@media screen and (max-width: 600px){
+  #picsTable {
+  
+    margin-left: 10px
+  }
 }
 tr {
   display:flex;
