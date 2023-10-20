@@ -165,6 +165,7 @@ body {
   top: 0px;
   left:1px;
   z-index:100;
+  box-shadow: 0px 0px 10px;
   
 
 }
@@ -190,6 +191,7 @@ body {
   z-index:100;
   transform: rotate(-180deg);
   transition-duration: 1s;
+  
 }
 .logo-active:hover {
   color: black;
@@ -213,6 +215,8 @@ body {
   min-width:37px;
   
   
+  
+  
 }
 .icon:hover {
   font-size: max(2vw,15px);
@@ -220,6 +224,7 @@ body {
   background-color: rgb(241, 192, 200);
   transition-duration: 0.5s;
   color:black;
+  
   
   
 }
@@ -244,6 +249,7 @@ body {
   min-width:37px;
   
   
+  
 }
 .active .icon:hover {
   font-size: max(2vw,15px);
@@ -262,7 +268,8 @@ body {
 @media screen and (min-width: 900px){
   .icon:hover {
     width: 120%;
-    height:45px
+    height:45px;
+    
 
   }
   .active .icon:hover {
@@ -866,16 +873,24 @@ tr {
 
 #projectsContainer {
   display: flex;
-  width:70%;
+  justify-content: space-between;
+  width:75%;
+  
   margin: auto;
   margin-top:100px;
+  
   
 }
 
 .projectsImg {
   width: 100%;
   border-radius:4px;
-  border:white 2px solid
+  border:white 2px solid;
+  height: min(25vw,250px);
+  min-height:120px;
+  object-fit: cover;
+  object-position: 75% 25%;
+  
 }
 
 @media screen and (max-width: 900px) {
