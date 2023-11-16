@@ -80,7 +80,7 @@ function AboutMe() {
                                     <th>
                                         <div class="imgRotateRight">    
                                             <img src={travel2} alt="Travel" class="travelImg"></img>
-                                            <p>Algonquin National Park, Ontario</p>
+                                            <p>Algonquin National Park</p>
                                         </div>
                                     </th>    
                                     <th>

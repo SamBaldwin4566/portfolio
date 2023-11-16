@@ -20,7 +20,7 @@ body {
   
   background-color: black;
   width: 6.5%;
-  min-width:50px;
+  min-width:37px;
   height: 100%;
   position: fixed;
   top: 0;
@@ -453,8 +453,8 @@ a {
 /* //////////////////About me styles ////////////////*/
 
 #aboutMe {
-  width: 82%;
-  margin-left: 13%;
+  width: 80%;
+  margin-left: 10%;
   margin-top:100px;
   z-index:1;
 }
@@ -529,11 +529,15 @@ a {
   
   margin: auto
 }
-@media screen and (max-width: 600px){
-  #picsTable {
-  
-    margin-left: 10px
+@media screen and (max-width: 800px){
+
+  .textTravel {
+    margin-bottom:50px;
+    
+    
+    
   }
+  
 }
 tr {
   display:flex;
@@ -542,11 +546,12 @@ tr {
 
 .travelImg {
   width: min(20vw,230px);
-  min-width: 110px;
+  min-width: 170px;
   height: min(20vw,230px);
-  min-height:110px;
+  min-height:170px;
   object-fit: cover;
   object-position: 75% 25%;
+  border-radius:10px;
   
   
   
@@ -555,12 +560,15 @@ tr {
 
 .imgRotateRight {
   padding: 2vw 1vw 1vw 1vw;
+  padding:10px;
+  border-radius:20px;
   width: min(20vw,230px);
-  min-width: 110px;
+  min-width: 170px;
   box-shadow: 10px 10px 5px #aaaaaa;
-  transform: rotate(7deg);
+  transform: rotate(8deg);
   background-color: white;
   margin:10px;
+  transition-duration: 0.5s;
 }
 .imgRotateRight:hover {
   transform: scale(1.5);
@@ -570,16 +578,20 @@ tr {
 .imgRotateLeft:hover {
   transform: scale(1.5);
   transition-duration: 0.5s;
+  z-index:100
 }
 
 .imgRotateLeft {
-  padding: 2vw 1vw 1vw 1vw;
+  /* padding: 2vw 1vw 1vw 1vw; */
+  padding:10px;
+  border-radius:20px;
   width: min(20vw,230px);
-  min-width: 110px;
+  min-width: 170px;
   box-shadow: 10px 10px 5px #aaaaaa;
   transform: rotate(-8deg);
   background-color: white;
   margin:10px;
+  transition-duration: 0.5s;
 }
 
 
@@ -614,13 +626,24 @@ tr {
   
   .imgRotateLeft {
     transform: rotate(0deg);
+    margin-top:-40px;
+    margin-bottom:-40px;
   }
   .imgRotateRight {
     transform: rotate(0deg);
+    margin-left:60px;
+    
+    
+  }
+  .imgRotateRight > p {
+    display: none
+  }
+  .imgRotateLeft > p {
+    display: none
   }
   .rayaPic {
-    height: 30vh;
-    width: 50%;
+    height: 300px;
+    width: 90%;
   }
 }
 
@@ -900,6 +923,16 @@ tr {
   
 }
 
+
+
+.projectsImg:hover {
+  box-shadow: 0px 0px 10px white;
+  border-radius:4px;
+  transition-duration: 0.5s;
+  width: 90%;
+  height:200px
+  
+}
 @media screen and (max-width: 900px) {
   .projectsContainer {
     display:inline;
@@ -914,15 +947,10 @@ tr {
     margin-top:20px;
     border:white 2px solid
   }
-}
 
-.projectsImg:hover {
-  box-shadow: 0px 0px 10px white;
-  border-radius:4px;
-  transition-duration: 0.5s;
-  width: 90%;
-  height:200px
-  
+  .projectsImg:hover {
+    width:70%;
+  }
 }
 
 
