@@ -546,7 +546,7 @@ tr {
 
 .travelImg {
   width: min(20vw,230px);
-  min-width: 170px;
+  min-width: 200px;
   height: min(20vw,230px);
   min-height:170px;
   object-fit: cover;
@@ -563,7 +563,7 @@ tr {
   padding:10px;
   border-radius:20px;
   width: min(20vw,230px);
-  min-width: 170px;
+  min-width: 200px;
   box-shadow: 10px 10px 5px #aaaaaa;
   transform: rotate(8deg);
   background-color: white;
@@ -586,7 +586,7 @@ tr {
   padding:10px;
   border-radius:20px;
   width: min(20vw,230px);
-  min-width: 170px;
+  min-width: 200px;
   box-shadow: 10px 10px 5px #aaaaaa;
   transform: rotate(-8deg);
   background-color: white;
