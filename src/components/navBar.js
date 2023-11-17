@@ -51,7 +51,9 @@ function NavBar() {
     return(
         <div id="navBar">
             
-            <div id="logo" className="logo" onClick={dropMenu}>=</div>
+            <div id="logo" className="logo" onClick={dropMenu}>
+        
+            </div>
                 
             
             <div  className="nav">

@@ -17,14 +17,16 @@ body {
 
 
 #navBar {
-  
+  position: fixed;
+  z-index: 100;
   background-color: black;
-  width: 6.5%;
+  
+  width: 100%;
   min-width:37px;
-  height: 100%;
+  height: 90px;
   position: fixed;
   top: 0;
-  padding-top: 180px;
+  
   
 }
 
@@ -40,19 +42,19 @@ body {
 /* Navigation Icons move down */
 @keyframes home-move {
   0%{top: 33px}
-  100%{top: 30%}
+  100%{left: 18%}
 }
 @keyframes aboutMe-move {
   0%{top: 33px}
-  100%{top: 45%}
+  100%{left: 38%}
 }
 @keyframes experience-move {
   0%{top: 33px}
-  100%{top: 60%}
+  100%{left: 58%}
 }
 @keyframes projects-move {
-  0%{top: 33px}
-  100%{top: 75%}
+  0%{top: 40px}
+  100%{left: 78%}
 }
 .nav-home-active {
   position:fixed;
@@ -61,8 +63,6 @@ body {
   animation-fill-mode: forwards;
   animation-name: home-move;
   animation-duration: 1s;
-  width:6%;
-  height:6%;
 }
 .nav-aboutMe-active {
   position:fixed;
@@ -72,7 +72,6 @@ body {
   animation-name: aboutMe-move;
   animation-duration: 1.25s;
  
-  width:6%;
 }
 .nav-experience-active {
   position:fixed;
@@ -81,42 +80,36 @@ body {
   animation-fill-mode: forwards;
   animation-name: experience-move;
   animation-duration: 1.5s;
-  
-  width:6%;
-  height:6%;
 }
 .nav-projects-active {
   position:fixed;
-  top: 30px;
+  top: 33px;
   left:3px;
   animation-fill-mode: forwards;
   animation-name: projects-move;
   animation-duration: 1.75s;
-  
-  width:6%;
-  height: 6%
 }
 
 /* Navigation Icons move up */
 @keyframes home-move-up {
-  0%{top: 30%}
+  0%{left: 18%; top:33px}
   100%{top: 33px}
 }
 @keyframes aboutMe-move-up {
-  0%{top: 45%}
+  0%{left: 38%;top:33px}
   100%{top: 33px}
 }
 @keyframes experience-move-up {
-  0%{top: 60%}
+  0%{left: 58%;top:33px}
   100%{top: 33px}
 }
 @keyframes projects-move-up {
-  0%{top: 75%}
+  0%{left: 78%;top:33px}
   100%{top: 33px}
 }
 .nav-home {
   position:fixed;
-  top: 30%;
+  left: 18%;
   left:3px;
   animation-fill-mode: forwards;
   animation-name: home-move-up;
@@ -126,7 +119,7 @@ body {
 }
 .nav-aboutMe {
   position:fixed;
-  top: 45%;
+  left: 38%;
   left:3px;
   animation-fill-mode: forwards;
   animation-name: aboutMe-move-up;
@@ -135,7 +128,7 @@ body {
 }
 .nav-experience {
   position:fixed;
-  top: 60%;
+  left: 58%;
   left:3px;
   animation-fill-mode: forwards;
   animation-name: experience-move-up;
@@ -145,7 +138,7 @@ body {
 }
 .nav-projects {
   position:fixed;
-  top: 75%;
+  left: 78%;
   left:3px;
   animation-fill-mode: forwards;
   animation-name: projects-move-up;
@@ -204,16 +197,16 @@ body {
 
 
 .icon {
-  /* display: flex; */
   font-size: max(2vw,15px);
   color: white;
   background-color: black;
-  padding-top: 2.2vh;
-  padding-bottom:2.2vh;
+  padding:2.2vh;
+  padding-top: 20px;
+  padding-bottom:20px;
   border-radius: 100px;
   margin-top: -20px;
   margin-bottom: -20px;
-  width: 80%;
+  width: 60px;
   min-width:37px;
   transition-duration: 0.5s;
   text-decoration: underline black;
@@ -223,8 +216,8 @@ body {
   
 }
 .icon:hover {
-  font-size: max(2vw,15px);
-  width: 80%;
+  /* font-size: max(2vw,15px); */
+  
   background-color: rgb(241, 192, 200);
   text-decoration: underline rgb(241, 192, 200);
   transition-duration: 0.5s;
@@ -236,7 +229,6 @@ body {
 
 .iconText {
   font-size: 15px;
-  /* display:none */
   
   border-bottom: red 2px;
   font-family:"Caveat", sans-serif;
@@ -244,43 +236,104 @@ body {
 
 
 .active .icon {
-  color: black;
-  background-color: #f4ce37;
-  padding-top: 2.2vh;
-  padding-bottom:2.2vh;
+  
+  color: #f4ce37;
+  padding:2.2vh;
+  padding-top: 20px;
+  padding-bottom:20px;
   border-radius: 100px;
   margin-top: -20px;
   margin-bottom: -20px;
-  width: 80%;
+  width: 60px;
   min-width:37px;
-  text-decoration: underline #f4ce37;
+  text-decoration: underline black;
   
   
 }
 .active .icon:hover {
+  color: black;
+  background-color: #f4ce37;;
   font-size: max(2vw,15px);
-  text-decoration: underline #f4ce37;
-  width: 80%;
+  text-decoration: underline #f4ce37;;
   transition-duration: 0.5s;
+  height:60px;
 }
 
 
 @media screen and (max-width: 900px){
+
+  .logo {
+    height: 50px;
+    width: 50px;
+    font-size: 300%;
+  
+  }
+  .logo-active {
+    height: 50px;
+    width: 50px;
+    font-size: 300%;
+  }
+
   .iconText {
     display: none
   }
-}
+  #navBar {
+    height:52px;
+  }
+  .icon {
+    width: 20px;
+    height:20px;
+    transition-duration: 0.5s;
+    padding: 1.1vh;
+    padding-top: 10px;
+    padding-bottom:10px;
+    
 
-@media screen and (min-width: 900px){
+  }
+  .active .icon {
+
+    width: 20px;
+    height:20px;
+    transition-duration: 0.5s;
+    padding: 1.1vh;
+    padding-top: 10px;
+    padding-bottom:10px;
+  }
   .icon:hover {
-    width: 120%;
-    height:45px;
+    width: 20px;
+    height:20px;
+    transition-duration: 0.5s;
+    padding: 1.1vh;
+    padding-top: 10px;
+    padding-bottom:10px;
     
 
   }
   .active .icon:hover {
-    width: 120%;
+
+    width: 20px;
+    height:20px;
+    transition-duration: 0.5s;
+    padding: 1.1vh;
+    padding-top: 10px;
+    padding-bottom:10px;
+  }
+
   
+}
+
+@media screen and (min-width: 900px){
+  .icon:hover {
+    width: 60px;
+    height:50px;
+    transition-duration: 0.5s;
+    
+
+  }
+  .active .icon:hover {
+    width: 60px;
+    height:50px;
+    transition-duration: 0.5s;
   }
   
 }
@@ -316,7 +369,7 @@ body {
   border-radius: 50%;
   position:fixed;
   top: 120px;
-  left:78vw;
+  left:75vw;
   z-index:-40;
 }
 #profPic {
@@ -326,7 +379,7 @@ body {
   border-radius: 50%;
   position:fixed;
   top: 120px;
-  left:78vw;
+  left:75vw;
   z-index:100;
 }
 .circle3 {
@@ -336,7 +389,7 @@ body {
   border-radius: 50%;
   position:fixed;
   top: 100px;
-  left:87vw;
+  left:84vw;
   z-index:-50;
 }
 
@@ -384,14 +437,14 @@ img {
 
 .name {
   margin-top: 130px;
-  margin-left: 17vw;
+  margin-left: 15vw;
   font-size: max(3vw, 20px);
   font-family:"Caveat", sans-serif;
   text-align: left;
 }
 
 #role {
-  margin-left:22vw;
+  margin-left:20vw;
   margin-top:70px;
   font-size: max(7vw, 43px);
   font-family:"Comfortaa", sans-serif;
@@ -453,8 +506,8 @@ a {
 /* //////////////////About me styles ////////////////*/
 
 #aboutMe {
-  width: 80%;
-  margin-left: 10%;
+  width: 85%;
+  margin: auto;
   margin-top:100px;
   z-index:1;
 }
@@ -654,7 +707,7 @@ tr {
 
 #expSection {
   display: flex;
-  width:90%;
+  width:100%;
   margin: auto
 }
 
@@ -943,14 +996,19 @@ tr {
   }
   
   .projectsImg {
-    width: 60%;
+    
     margin-top:20px;
-    border:white 2px solid
+    border:white 2px solid;
+    border-radius:4px;
+    width: 55%;
+    height: 120px;
+  }
+  .projectsImg:hover {
+    width: 55%;
+    height: 120px;
   }
 
-  .projectsImg:hover {
-    width:70%;
-  }
+  
 }
 
 

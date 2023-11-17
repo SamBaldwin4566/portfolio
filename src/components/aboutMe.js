@@ -26,7 +26,7 @@ function AboutMe() {
                             <div class="skills">React</div>
                             <div class="skills">HTML</div>
                             <div class="skills">CSS</div>
-                            <div class="skills">Git</div> 
+                            <div class="skills">PHP</div> 
                         </div>
                         
 
