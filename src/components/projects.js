@@ -21,7 +21,7 @@ function Projects() {
                             <img class="projectsImg" src={wedding} alt=""></img>
                             
                         </div>
-                        <a href="http://sbaldwin-library.netlify.app" target="_blank" rel="noreferrer">
+                        <a href="http://sbaldwin-wedding.netlify.app" target="_blank" rel="noreferrer">
                             <div class="back">
                                 <h1>Wedding Webpage</h1>
                                 <h4>HTML | CSS | JavaScript</h4>
