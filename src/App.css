@@ -985,7 +985,7 @@ tr {
     z-index: 2;
     backface-visibility: hidden;
     background:linear-gradient(rgb(10, 10, 10),rgb(118, 111, 111));
-    
+    border-radius:20px;
   }
   .back {
     position:absolute;
@@ -995,7 +995,7 @@ tr {
     color:white;
     transform:rotateY(180deg);
     background:linear-gradient(rgb(10, 10, 10),rgb(118, 111, 111));
-    
+    border-radius:20px;
     
   }
 
