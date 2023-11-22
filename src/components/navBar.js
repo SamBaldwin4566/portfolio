@@ -52,7 +52,7 @@ function NavBar() {
         <div id="navBar">
             
             <div id="logo" className="logo" onClick={dropMenu}>
-        
+                =
             </div>
                 
             
