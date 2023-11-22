@@ -970,7 +970,7 @@ tr {
   width:40%;
   border-radius:20px;
   border:white 2px solid;
-  background:linear-gradient(rgb(10, 10, 10),rgb(118, 111, 111));
+  
   height:250px;
   margin:auto;
   position:relative;
@@ -984,6 +984,7 @@ tr {
     height:100%;
     z-index: 2;
     backface-visibility: hidden;
+    background:linear-gradient(rgb(10, 10, 10),rgb(118, 111, 111));
     
   }
   .back {
@@ -993,6 +994,7 @@ tr {
     z-index:1;
     color:white;
     transform:rotateY(180deg);
+    background:linear-gradient(rgb(10, 10, 10),rgb(118, 111, 111));
     
     
   }
@@ -1010,7 +1012,7 @@ tr {
   
 }
 
-.card:hover {
+.card:hover, .card:active {
   transform: rotateY(180deg);
 }
 
