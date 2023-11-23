@@ -1011,11 +1011,11 @@ tr {
   
   
 }
-
-.card:hover, .card:active {
-  transform: rotateY(180deg);
+@media screen and (min-width: 900px) {
+  .card:hover, .card:active {
+    transform: rotateY(180deg);
+  }
 }
-
 /* .projectsImg:hover {
   box-shadow: 0px 0px 10px white;
   border-radius:4px;

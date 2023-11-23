@@ -17,10 +17,13 @@ function Projects() {
 
                 <div class="projectsContainer">
                     <div class="card">
-                        <div id="wedding" class="front">
-                            <img class="projectsImg" src={wedding} alt=""></img>
-                            
+                        
+                         <div id="wedding" class="front">
+                            <a href="http://sbaldwin-wedding.netlify.app" target="_blank" rel="noreferrer">
+                                <img class="projectsImg" src={wedding} alt=""></img>
+                            </a> 
                         </div>
+                        
                         <a href="http://sbaldwin-wedding.netlify.app" target="_blank" rel="noreferrer">
                             <div class="back">
                                 <h1>Wedding Webpage</h1>
