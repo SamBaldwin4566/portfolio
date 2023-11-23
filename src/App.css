@@ -967,15 +967,14 @@ tr {
 }
 
 .card {
-  width:40%;
+  width:400px;
   border-radius:20px;
   border:white 2px solid;
-  
   height:250px;
   margin:auto;
   position:relative;
-  transition: all 1s linear;
-  transform-style: preserve-3d;
+ 
+
 }
 
 .front {
@@ -983,9 +982,10 @@ tr {
     width:100%;
     height:100%;
     z-index: 2;
-    backface-visibility: hidden;
+    
     background:linear-gradient(rgb(10, 10, 10),rgb(118, 111, 111));
     border-radius:20px;
+    transition-duration: 0.5s;
   }
   .back {
     position:absolute;
@@ -993,38 +993,32 @@ tr {
     height:100%;
     z-index:1;
     color:white;
-    transform:rotateY(180deg);
+    
     background:linear-gradient(rgb(10, 10, 10),rgb(118, 111, 111));
     border-radius:20px;
+    
     
   }
 
 .projectsImg {
   width:100%;
-  /* width: 60%; */
-  /* border-radius:200px; */
+  
   border-radius:20px;
   height:100%;
   object-fit:cover;
   object-position: 50% 50%;
-  transition-duration: 0.5s;
+  
   
   
 }
-@media screen and (min-width: 900px) {
-  .card:hover, .card:active {
-    transform: rotateY(180deg);
+/* @media screen and (min-width: 900px) { */
+  
+  .card:hover > .front {
+    opacity: 5%;
+    transition-duration: 0.5s;
   }
-}
-/* .projectsImg:hover {
-  box-shadow: 0px 0px 10px white;
-  border-radius:4px;
-  transition-duration: 0.5s;
-  width: 99%;
-  height:250px;
-  
-  
-} */
+/* } */
+
 @media screen and (max-width: 900px) {
 
   

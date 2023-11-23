@@ -19,16 +19,16 @@ function Projects() {
                     <div class="card">
                         
                          <div id="wedding" class="front">
-                            <a href="http://sbaldwin-wedding.netlify.app" target="_blank" rel="noreferrer">
+                            
                                 <img class="projectsImg" src={wedding} alt=""></img>
-                            </a> 
+                            
                         </div>
                         
                         <a href="http://sbaldwin-wedding.netlify.app" target="_blank" rel="noreferrer">
                             <div class="back">
                                 <h1>Wedding Webpage</h1>
                                 <h4>HTML | CSS | JavaScript</h4>
-                                <p>Click to View</p>
+                                <a href="http://sbaldwin-wedding.netlify.app" target="_blank" rel="noreferrer">Click to View</a> 
                             </div>
                         </a>    
                     </div>
@@ -38,13 +38,13 @@ function Projects() {
                             <img class="projectsImg" src={library} alt=""></img>
                             
                         </div>
-                        <a href="http://sbaldwin-library.netlify.app" target="_blank" rel="noreferrer">
+                        
                             <div class="back">
                                 <h1>Library App</h1>
                                 <h4>HTML | CSS | JavaScript</h4>
-                                <p>Click to View</p>
+                                <a href="http://sbaldwin-library.netlify.app" target="_blank" rel="noreferrer"><p>Click to View</p></a>
                             </div>
-                        </a>
+                        
                     </div>
                         
                     
@@ -57,13 +57,13 @@ function Projects() {
                         <div id="gamesApp" class="front">
                             <img class="projectsImg" src={gamesApp} alt=""></img>
                         </div>
-                        <a href="http://sbaldwin-games-app.netlify.app" target="_blank" rel="noreferrer">
+                        
                            <div class="back">
                                 <h1>Games App</h1>
                                 <h4>React | JavaScript | HTML | CSS</h4>
-                                <p>Click to View</p>
+                                <a href="http://sbaldwin-games-app.netlify.app" target="_blank" rel="noreferrer">Click to View</a>
                             </div> 
-                        </a>
+                        
                         
                     </div>
                 </div>
