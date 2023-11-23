@@ -24,13 +24,13 @@ function Projects() {
                             
                         </div>
                         
-                        <a href="http://sbaldwin-wedding.netlify.app" target="_blank" rel="noreferrer">
+                        
                             <div class="back">
                                 <h1>Wedding Webpage</h1>
                                 <h4>HTML | CSS | JavaScript</h4>
                                 <a href="http://sbaldwin-wedding.netlify.app" target="_blank" rel="noreferrer">Click to View</a> 
                             </div>
-                        </a>    
+                           
                     </div>
 
                     <div class="card">
