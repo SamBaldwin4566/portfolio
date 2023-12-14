@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useEffect } from 'react';
+import Fade from "react-reveal";
 
 
 function Experience() {
@@ -30,10 +31,15 @@ function Experience() {
     return(
         <div id="experience">
             {/* <div className="pageHeading"><b>Experience</b></div> */}
-            <div className="circle1"></div>
+            {/* <div className="circle1"></div>
             <div className="circle2"></div>
-            <div className="circle3"></div>
-            <h1 className="name"><span className="firstLetter"><b>E</b></span>xperience & <span className="firstLetter"><b>E</b></span>ducation</h1>
+            <div className="circle3"></div> */}
+            <div id="breakLine">
+                   <br/>
+                    
+                    
+            </div>
+            <h1 className="sectionHeading"><span className="firstLetter"><b>E</b></span>xperience & <span className="firstLetter"><b>E</b></span>ducation</h1>
             
             <div id="expSection">
                 
@@ -272,7 +278,23 @@ function Experience() {
                     </div>
                     )}
                 </div>
+                
             </div>
+            <div id="breakLine">
+                   <br/><br/><br/><br/><br/><br/><br/>
+                    
+                    
+            </div>
+            <Fade right>
+                <div id="line1">
+                    <hr/>
+                </div>
+            </Fade>
+            <Fade right>
+            <div id="line2">
+                <hr/>
+            </div>
+            </Fade>
     
         </div>
     )

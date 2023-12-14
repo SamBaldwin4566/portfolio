@@ -1,22 +1,30 @@
 // import library from '../images/LibraryApp.png'
 import gamesApp from '../images/GamesApp.png'
 import wedding from '../images/WeddingWebsite.png'
-import currencyConverter from '../images/CurrencyConverter.png'
+import currencyConverter from '../images/CurrencyConverter.png';
+
 
 function Projects() {
 
+    
     
 
     return(
         <div id="projects">
             {/* <div className="pageHeading"><b>Projects</b></div> */}
-            <div className="circle1"></div>
+            {/* <div className="circle1"></div>
             <div className="circle2"></div>
-            <div className="circle3"></div>
-            <h1 className="name"><span className="firstLetter"><b>P</b></span>rojects</h1>
+            <div className="circle3"></div> */}
+            <div id="breakLine">
+                   <br/>
+                    
+                    
+            </div>
+            <h1 className="sectionHeading"><span className="firstLetter"><b>P</b></span>rojects</h1>
 
 
                 <div class="projectsContainer">
+                    
                     <div class="card">
                         
                          <div id="wedding" class="front">
@@ -34,6 +42,7 @@ function Projects() {
                             </div>
                            
                     </div>
+                    
 
                     <div class="card">
                         <div id="currencyConverter" class="front">
@@ -72,6 +81,12 @@ function Projects() {
                         
                     </div>
                 </div>
+                <div id="breakLine">
+                   
+                    
+                    <br/><br/><br/>
+                </div>
+                
                 
             
         </div>
