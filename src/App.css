@@ -187,7 +187,7 @@ body {
   position:fixed;
   top: 120px;
   left:75vw;
-  z-index:-40;
+  z-index:-50;
   animation: move2 2s  infinite linear;
   animation-play-state: paused;
   animation-delay: calc(var(--scroll) * -1s);
