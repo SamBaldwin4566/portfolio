@@ -167,17 +167,17 @@ body {
   left: 55vw;
   z-index:-40;
   box-shadow: 30px 0px 100px white;
-  animation: move1 2s  infinite linear;
+  /* animation: move1 2s  infinite linear;
   animation-play-state: paused;
-  animation-delay: calc(var(--scroll) * -1s)
+  animation-delay: calc(var(--scroll) * -1s) */
 }
-@keyframes move1 {
+/* @keyframes move1 {
   to {
     
     transform: translate3D(-600px, -300px, 1000px);
     
   }
-}
+} */
 .circle2 {
   height: 15vw;
   width: 15vw;
@@ -188,20 +188,20 @@ body {
   top: 120px;
   left:75vw;
   z-index:-50;
-  animation: move2 2s  infinite linear;
+  /* animation: move2 2s  infinite linear;
   animation-play-state: paused;
-  animation-delay: calc(var(--scroll) * -1s);
+  animation-delay: calc(var(--scroll) * -1s); */
   
 
 }
 
-@keyframes move2 {
+/* @keyframes move2 {
   to {
     
     transform: translate3D(100px, -20px, 1000px);
     
   }
-}
+} */
 
 
 
@@ -224,17 +224,17 @@ body {
   top: 100px;
   left:84vw;
   z-index:-60;
-  animation: move3 1.2s  infinite linear;
+  /* animation: move3 1.2s  infinite linear;
   animation-play-state: paused;
-  animation-delay: calc(var(--scroll) * -1s);
+  animation-delay: calc(var(--scroll) * -1s); */
 }
 
-@keyframes move3 {
+/* @keyframes move3 {
   to {
     transform: translateX(200px);
     
   }
-}
+} */
 
 img {
   filter:grayscale(0%)
