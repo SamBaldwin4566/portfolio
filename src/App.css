@@ -214,6 +214,7 @@ body {
   top: 120px;
   left:75vw;
   z-index:100;
+  filter: grayscale(80%);
 }
 .circle3 {
   height: 7vw;

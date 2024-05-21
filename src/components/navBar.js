@@ -13,17 +13,22 @@ function NavBar() {
     function dropMenu(e) {
         let logo = document.getElementById("logoIcon")
 
-        if (logo.className === 'logoIcon') {
+        if (logo.className === 'logoIcon-active') {
+            logo.className = 'logoIcon'
+            logo.nextSibling.className = 'mainButtons-inactive'
             
+
+        }
+        else if (logo.className === 'logoIcon active') {
+            logo.className = 'logoIcon'
+            logo.nextSibling.className = 'mainButtons-inactive'
+        }
+
+        else {
             logo.className = 'logoIcon-active';
 
             logo.nextSibling.className = 'mainButtons-active'
-
-        }
-        else {
-            console.log(e)
-            logo.className = 'logoIcon'
-            logo.nextSibling.className = 'mainButtons-inactive'
+            
         }
         
     }

@@ -1,6 +1,6 @@
 
 import { BsGithub, BsLinkedin, BsEnvelopeAtFill } from "react-icons/bs";
-import img from '../images/Sam.png'
+import img from '../images/Sam2.png';
 import Pulse from 'react-reveal/Pulse';
 
 function Landing() {
