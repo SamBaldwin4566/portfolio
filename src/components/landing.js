@@ -14,10 +14,11 @@ function Landing() {
             
             <div className="circle3"></div>
             
-                <h1 class="name">Hi, I'm <br/>Sam Baldwin</h1>
+                <h1 class="name">Hi, I'm Sam</h1>
             
             <Pulse >
-<               h2 id="role"><span className="firstLetter"><b>W</b></span>eb <span className="firstLetter"><b>D</b></span>eveloper</h2>
+            {/* <h2 id="role"><span className="firstLetter"><b>S</b></span>oftware <span className="firstLetter"><b>D</b></span>eveloper</h2> */}
+            <h2 id="role">a Software Developer.</h2>
             </Pulse>
             
             

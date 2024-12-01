@@ -1,5 +1,5 @@
 import travel1 from '../images/travel1.jpeg'
-import travel2 from '../images/travel2.jpeg'
+// import travel2 from '../images/travel2.jpeg'
 import travel3 from '../images/travel3.jpeg'
 import travel5 from '../images/travel5.jpeg'
 import raya1 from '../images/raya1.jpeg'
@@ -42,14 +42,11 @@ function AboutMe() {
                             
                             <div class="text">
                                 
-                                <p >My interest in coding first came about during lockdown. I spent many days watching YouTube videos determined 
-                                to be the one to come up with the next big app. As "normal" life resumed I had to put this dream on hold. 
-                                In 2022 I decided to give it another shot. After seeking advice from people I knew in the industry, I 
-                                decided to enroll in a Web Development Bootcamp through Hyperion Development co-certified with Imperial College
-                                London. After passing the bootcamp with 99% I am now working on my own projects while looking for the right opportunity
-                                to turn this into a career.</p>
-                                <p>I am currently volunteering as a Front-End Developer for Farmspeak Technology. I have gained invaluable experience from
-                                this opportunity and it has just reinforced my drive to have a career in this industy.</p>
+                                <p>My journey into coding began during the lockdown, a time when I became captivated by YouTube tutorials and dreamt of creating the next big app. As life returned to normal, I had to set that dream aside, but in 2022, I decided to reignite my passion for technology.</p>
+
+<p>After seeking advice from industry professionals, I enrolled in a Web Development Bootcamp with Hyperion Development, co-certified by Imperial College London. Throughout the programme, I built a solid foundation in technology by exploring diverse coding approaches, including hands-on projects and collaborative problem-solving. I also took the opportunity to connect with others in the industry, gaining valuable insights and mentorship. I graduated with distinction, earning a 99% pass rate.</p>
+
+<p>Determined to build on my skills, I dedicated time to creating personal projects and seized every opportunity to gain real-world experience. One such opportunity was volunteering as a Frontend Developer for Farmspeak Technology. In this role, I helped design intuitive user interfaces, ensuring a seamless user experience while contributing to impactful projects. This experience not only sharpened my technical skills but also reinforced my drive to pursue a career in this field.</p>
                             
                             </div>
                         </div>
@@ -65,10 +62,7 @@ function AboutMe() {
                                 
                             
                                 <div id="travelText" class="text">
-                                    <p>It has always been one of my dreams to travel to every continent in the world. After university, I was fortunate enough
-                                    spend my early twenties travelling and working around South East Asia, Australia and Canada. I believe travel is one of the best 
-                                    experiences you can have in life and I still try to do it as much as I can. Most recently, I celebrated my 30th birthday with a 
-                                    trip to Japan and South Korea.</p>
+                                    <p>One of my lifelong dreams has been to travel to every continent. After university, I was fortunate enough to spend my early twenties exploring and working in Southeast Asia, Australia, and Canada. I believe travel is one of life’s greatest experiences, offering endless opportunities to learn and grow. Even now, I make it a priority to travel whenever I can. My most recent adventures took me to Japan and South Korea, and in October, I had the incredible experience of getting married in Bali.</p>
                                     <p></p>
                                     <p></p>
                                 </div>
@@ -79,7 +73,7 @@ function AboutMe() {
                                             <th>
                                                 <div class="imgRotateRight">
                                                     <img src={travel3} alt="Travel" class="travelImg"></img>
-                                                    <p>Lake Morraine, Alberta</p>
+                                                    <p>Canada</p>
                                                 </div>
                                             </th> 
                                             <th>   
@@ -91,7 +85,7 @@ function AboutMe() {
                                             <th>
                                                 <div class="imgRotateRight">    
                                                     <img src={travel5} alt="Travel" class="travelImg"></img>
-                                                    <p>Kyoto, Japan</p>
+                                                    <p>Japan</p>
                                                 </div>
                                             </th>    
                                             {/* <th>
@@ -119,14 +113,9 @@ function AboutMe() {
                                 <img src={raya1} alt="Raya" class="rayaPic"></img>
 
                                 <div class="text" id="textHobbies">
-                                    <p>Outside of travel and work I enjoy finding new skills to learn. I have always wanted to play an instrument and learn
-                                                    a second language. So I am currently in the beginner phase of learning both Spanish and Keyboard. I like to keep on top of my fitness
-                                                    and I am a regular member of a gym. I am also qualified up to Level 3 in Personal Training and like to help my family and friends achieve their
-                                                    own fitness goals.</p> 
-                                    <p>One of my favourite ways to spend time is with my rescue dog Raya who I adopted from Bulgaria. We recently did a DNA test and found
-                                                    out her two most prominant breeds are German Shepherd and Chow Chow.
-                                                    She's ace. 
-                                    </p>
+                                <p>Outside of travel and work, I’m passionate about learning new skills. I've always wanted to play an instrument and learn a second language, so I’m currently in the beginner phase of learning both Spanish and the keyboard. I also prioritize my fitness and am a regular gym-goer. Additionally, I’m qualified up to Level 3 in Personal Training; however, since discovering my passion for coding, I’ve decided to only use this qualification to help my family and friends achieve their fitness goals.</p>
+
+<p>One of my favourite ways to spend time is with my rescue dog, Raya, whom I adopted from Bulgaria. We recently did a DNA test and discovered her two most prominent breeds are German Shepherd and Chow Chow. She’s truly one of a kind!</p>
                                 </div>
 
                                 

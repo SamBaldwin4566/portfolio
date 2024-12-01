@@ -24,26 +24,27 @@ body {
   z-index: 100;
   width: 100%;
   background-color: black;
-  height: 80px;
+  height: 10vh;
   top: 0;
   display:flex;
   justify-content:space-between;
   padding-top:10px;
   font-size: 200%;
+  /* background-color: red; */
 }
 
 
 /* --------- */
 
 .logoIcon {
-  border-radius:200px;
-  padding:20px;
+  border-radius:100%;
+  /* padding:20px; */
   border: white 2px solid;
   color:white;
   background-color: black;
-  height:40px;
-  transition: 0.35s;
-  width:40px;
+  height:15vh;
+  /* transition: 0.35s; */
+  width:15vh;
   margin-left:10px;
 }
 .logoIcon:hover {
@@ -53,13 +54,13 @@ body {
 }
 .logoIcon-active {
   border-radius:200px;
-  padding:20px;
+  /* padding:20px; */
   border: white 2px solid;
   color:white;
   background-color: black;
-  height:40px;
+  height:15vh;
   transition: 0.35s;
-  width:40px;
+  width:15vh;
   margin-left:10px;
 }
 .logoIcon-active:hover {
@@ -133,17 +134,17 @@ body {
 
 @media screen and (max-width: 900px){
 #navBar {
-  font-size:150%;
-  height:50px;
+  /* font-size:150%; */
+  /* height:50px; */
 }
-.logoIcon {
+/* .logoIcon {
   height:20px;
   width:20px;
 }
 .logoIcon-active {
   height:20px;
   width:20px;
-}
+} */
 }
 
 
@@ -160,13 +161,16 @@ body {
 .circle1 {
   height: max(65vw, 420px);
   width: max(65vw, 420px);
-  background-color: rgb(30, 30, 31);
+  /* background-color: rgb(30, 30, 31); */
+  background-color: #e6c2bf;
   border-radius: 50%;
   position:fixed;
-  top: 350px;
+  top: 50%;
   left: 55vw;
   z-index:-40;
-  box-shadow: 30px 0px 100px white;
+  background: radial-gradient(circle at 100px 100px, #e6c2bf, #000);
+  /* box-shadow: 30px 0px 100px white; */
+
   /* animation: move1 2s  infinite linear;
   animation-play-state: paused;
   animation-delay: calc(var(--scroll) * -1s) */
@@ -206,15 +210,15 @@ body {
 
 
 #profPic {
-  height: 15vw;
-  width: 15vw;
+  /* height: 30vh; */
+  width: 17vw;
   background-color: rgb(255, 255, 255);
   border-radius: 50%;
   position:fixed;
-  top: 120px;
+  top: 18vh;
   left:75vw;
   z-index:100;
-  filter: grayscale(80%);
+  filter: grayscale(50%);
 }
 .circle3 {
   height: 7vw;
@@ -222,9 +226,10 @@ body {
   background-color: #ffde59d3;
   border-radius: 50%;
   position:fixed;
-  top: 100px;
-  left:84vw;
-  z-index:-60;
+  top: 12vh;
+  left:86vw;
+  z-index:60;
+  background: radial-gradient(circle at 1px 10px, #ffde59d3, #ffde5928);
   /* animation: move3 1.2s  infinite linear;
   animation-play-state: paused;
   animation-delay: calc(var(--scroll) * -1s); */
@@ -259,28 +264,33 @@ img {
 }
 
 .name {
-  margin-top: 130px;
+  margin-top: 20vh;
   margin-left: 15vw;
   font-size: max(3vw, 20px);
-  font-family:"Caveat", sans-serif;
+  font-family: "Bad Script", cursive;
   text-align: left;
+  color:#f4ce37;
 }
+
 
 
 #role {
-  margin-left:20vw;
-  margin-top:70px;
-  font-size: max(7vw, 43px);
-  font-family:"Comfortaa", sans-serif;
-  width: 55vw;
+  margin-left:18vw;
+  /* margin-top:30vh */
+  font-size: max(9vw, 50px);
+  font-family: "League Spartan", serif;
+  width: 70vw;
   min-width: 150px;
   padding: 3vw;
   border-radius: 40px;
-  text-align:center;
+  text-align:left;
   position:absolute;
-  top:29%;
+  top:20vh;
+  color:#f8efe4;
+  /* border: red 2px solid; */
   
 }
+
 
 span {
   color:#f4ce37;
@@ -302,23 +312,57 @@ span {
 #contactIcons {
   margin-left: 62%;
   position:absolute;
-  bottom: 18%;
-  color:white; 
+  bottom: 20vh;
+  color:black; 
 }
 
 .contact {
   font-size: 4vw;
-  padding-left: 6vw;
-  color:white
+  margin-left: 6vw;
+  color:black
 }
 .contact:hover {
-  color:pink
+  color:white
 }
 
 a {
-  color:black
+  color:white
 }
 
+@media screen and (max-width: 800px){
+  .name {
+    margin-top:25vh;
+  }
+  #role {
+    top:25vh;
+  }
+}
+@media screen and (max-width: 450px){
+  .name {
+    margin-top:30vh;
+  }
+  #role {
+    top:30vh;
+  }
+  #profPic {
+    left:60vw;
+    width:30vw;
+    top:16vh;
+  }
+  .circle3 {
+    width:12vw;
+    height:12vw;
+    top: 13vh;
+    left:80vw;
+  }
+  #contactIcons {
+    margin-left: 56%;
+  }
+  .contact {
+    font-size: 6vw;
+    margin-left: 6vw;
+  }
+}
 
 
 
@@ -345,12 +389,14 @@ a {
 #line1 {
   width:60%;
   margin-left:40%;
-  padding:10px;
+  padding-top:10px;
+  padding-bottom:10px;
 }
 #line2 {
   width:40%;
   margin-left:60%;
-  padding:10px;
+  padding-top:10px;
+  padding-bottom:10px;
 }
 
 
@@ -362,7 +408,8 @@ a {
 /* //////////////////About me styles ////////////////*/
 
 #aboutMePage {
-  background-color: none
+  /* background-color: blue; */
+  width:100%;
 }
 
 
@@ -480,6 +527,7 @@ tr {
   background-color: white;
   margin:10px;
   transition-duration: 0.5s;
+  text-align:center;
 }
 .imgRotateRight:hover {
   transform: scale(1.5);
@@ -503,6 +551,7 @@ tr {
   background-color: white;
   margin:10px;
   transition-duration: 0.5s;
+  text-align:center;
 }
 
 
@@ -594,7 +643,8 @@ tr {
 /* Experience page styles */
 
 #experience {
-  
+  width:100%;
+  /* background-color:red; */
   
 }
 
@@ -842,7 +892,10 @@ tr {
 /* Styles for projects*/ 
 
 
-
+#projects {
+  /* background-color:green; */
+  width:100%;
+}
 
 .projectsContainer {
   display: flex;

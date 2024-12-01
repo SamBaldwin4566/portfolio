@@ -8,10 +8,12 @@ function Experience() {
     const [isShown1, setIsShown1] = useState(false);
     const [isShown2, setIsShown2] = useState(false);
     const [isShown3, setIsShown3] = useState(false);
-    const [isShown4, setIsShown4] = useState(false);
-    const [isShown5, setIsShown5] = useState(false);
-    const [isShown6, setIsShown6] = useState(false);
+    // const [isShown4, setIsShown4] = useState(false);
+    // const [isShown5, setIsShown5] = useState(false);
+    // const [isShown6, setIsShown6] = useState(false);
     const [isShown7, setIsShown7] = useState(false);
+    const [isShown8, setIsShown8] = useState(false);
+    
 
     // let grid = document.getElementById('expGrid')
 
@@ -46,40 +48,50 @@ function Experience() {
                 
                     <div id="expGrid" className={isMobile ? "expMob" : 'expWeb'}>
                         <div id="exp1" className="expRight"
+                            onMouseEnter={() => setIsShown8(true)}
+                            onMouseLeave={() => setIsShown8(false)}
+                            >
+                                <div className="exp">
+                                    <h4>Apr 2024 - Present</h4>
+                                    <h5>Apprentice Software Developer</h5>
+                                    <h5>FenTrack Ltd</h5>
+                                </div> 
+                        </div> 
+                        <div id="exp2" className="expLeft"
                             onMouseEnter={() => setIsShown7(true)}
                             onMouseLeave={() => setIsShown7(false)}
                             >
                                 <div className="exp">
-                                    <h4>July 2023 - Present</h4>
+                                    <h4>July 2023 - April 2024</h4>
                                     <h5>Volunteer Front End Developer</h5>
                                     <h5>Farmspeak Technology</h5>
                                 </div> 
                         </div> 
 
-                        <div id="exp2" className="expLeft"
+                        <div id="exp3" className="expRight"
                             onMouseEnter={() => setIsShown1(true)}
                             onMouseLeave={() => setIsShown1(false)}
                             >
                                 <div className="exp">
-                                    <h4>April 2023 - Present</h4>
+                                    <h4>April 2023 - April 2024</h4>
                                     <h5>Freelancer</h5>
                                     <h5>Byway</h5>
                                 </div>
 
                         </div>
 
-                        <div id="exp3" className="expRight"
+                        <div id="exp4" className="expLeft"
                             onMouseEnter={() => setIsShown2(true)}
                             onMouseLeave={() => setIsShown2(false)}
                             >
                                 <div className="exp">
-                                    <h4>January 2019 - Present</h4>
+                                    <h4>January 2019 - April 2024</h4>
                                     <h5>Science Technician</h5>
                                     <h5>Batley Grammar School</h5>
                                 </div> 
                         </div> 
 
-                        <div id="exp4" className="expLeft"
+                        <div id="exp5" className="expRight"
                             onMouseEnter={() => setIsShown3(true)}
                             onMouseLeave={() => setIsShown3(false)}
                             >
@@ -92,7 +104,7 @@ function Experience() {
 
                         </div>
 
-                        <div id="exp5"className="expRight"
+                        {/* <div id="exp5"className="expRight"
                             onMouseEnter={() => setIsShown4(true)}
                             onMouseLeave={() => setIsShown4(false)}
                             >
@@ -125,14 +137,27 @@ function Experience() {
                                 <h5>Microsearch Laboratories</h5>
                             </div> 
 
-                        </div>
+                        </div> */}
 
                     </div>
                 <div id="expInfo">
+                        {isShown8 && (      
+                        <div id="info5" className="info">
+                            <h3>Apprentice Software Developer | FenTrack Ltd</h3>
+                            <h3>Apr 2024 - Present</h3>
+                            <br/>
+                            
+                            <p>I work closely with a talented team across all stages of the software development cycle, 
+                                from providing support and designing new features to testing and deploying code updates. 
+                                I use various technologies and systems to build and maintain bespoke solutions for our customers. Additionally, I collaborate on code reviews and ensure that updates are delivered within an Agile framework.</p>
+                            
+                            <p>Skills: PHP · JavaScript · HTML · XML · Cascading Style Sheets (CSS) · MySQL · MariaDB · Git · Amazon Web Services (AWS)</p>
+                        </div>
+                    )}
                     {isShown7 && (      
                         <div id="info1" className="info">
                             <h3>Volunteer Front End Developer | Farmspeak Technology</h3>
-                            <h3>July 2023 - Present</h3>
+                            <h3>July 2023 - April 2024</h3>
                             <br/>
                             
                             <p>I have recently started volunteer work with Farmspeak Technology. I work in a team of Frontend Developers
@@ -155,7 +180,7 @@ function Experience() {
                     {isShown1 && (      
                         <div id="info2" className="info">
                             <h3>Freelancer | Byway</h3>
-                            <h3>April 2023 - Present</h3>
+                            <h3>April 2023 - Apr 2024</h3>
                             <br/>
 
                             <p>Recently I have taken up part-time freelancing work for the flight-free travel company Byway. Sustainability is a huge part 
@@ -174,9 +199,7 @@ function Experience() {
 
                     {isShown2 && (      
                         <div id="info3" className="info">
-                            <h3>Science Technician | Batley Grammar School</h3>
-                            <h3>January 2019 - Present</h3>
-                            <br/>
+                            <h3>Science Technician | Batley Grammar School</h3>                            <br/>
 
                             <p>Over the past 4 years I have worked as a Science Technician at Batley Grammar School. It has been a stable job and given
                             me opportunities to develop and achieve a lot of my goals. It has taught me great organistational skills and the ability to 
@@ -215,7 +238,7 @@ function Experience() {
                         </div>
                     )} 
 
-                    {isShown4 && (
+                    {/* {isShown4 && (
                         <div id="info5" className="info">
                             <h3>Administration Assistant | Global Debt Recovery</h3>
                             <h3>October 2018 - December 2018</h3>
@@ -232,9 +255,9 @@ function Experience() {
                                 <li>Answering inbound calls to efficiently and effectively handle customer queries.</li>
                             </ul>
                         </div>
-                    )}
+                    )} */}
 
-                    {isShown5 && (
+                    {/* {isShown5 && (
                         <div id="info6" className="info">
                             <h3>Customer Service Representative | Northtech</h3>
                             <h3>September 2017 - April 2018</h3>
@@ -254,9 +277,9 @@ function Experience() {
                             </ul>
                             
                         </div>
-                    )}
+                    )} */}
 
-                    {isShown6 && (
+                    {/* {isShown6 && (
                     <div id="info7" className="info">
                         <h3>Microbiological Analyst | Microsearch Laboratories</h3>
                         <h3>March 2017 - July 2017</h3>
@@ -276,7 +299,7 @@ function Experience() {
                         </ul>
 
                     </div>
-                    )}
+                    )} */}
                 </div>
                 
             </div>
