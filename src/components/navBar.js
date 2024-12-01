@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import React, { useState } from 'react';
-import {  BsFillHouseDoorFill, BsFillFilePersonFill,BsBuildingFill, BsClipboardFill, BsFillCaretDownFill} from "react-icons/bs";
+import {  BsFillHouseDoorFill, BsFillFilePersonFill,BsBuildingFill, BsClipboardFill, BsTextCenter} from "react-icons/bs";
 
 
 // import { AiFillHome, AiOutlineUser } from "react-icons/ai";
@@ -43,7 +43,11 @@ function NavBar() {
         
         
     
-    
+            window.addEventListener('scroll', () => {
+                //watch for the window.scrollY changes and compare with the 
+               //section offset, when they intersects, change the colour of the 
+               //icon
+              })
 
    
 
@@ -52,7 +56,7 @@ function NavBar() {
         <div id="navBar">
 
                 <NavLink to="/main" className="logoIcon" id="logoIcon" onClick={dropMenu}>
-                
+                    <div class="logoLogo"><BsTextCenter /></div>
                 </NavLink>
                 
             
